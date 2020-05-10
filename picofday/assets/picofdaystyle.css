@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div {
   background-color: black;
 }
@@ -9,3 +10,8 @@ h1 {
   text-align: center;
   background-color: cornflowerblue;
 }
+=======
+.header-align {
+    text-align: center;
+}
+>>>>>>> a8cffa089df542eae359c17c46462b9de0aec6c6
