@@ -51,7 +51,7 @@ background-color: black;
 } */
 body {
     background-image: url("./images/hdwall1.jpg");
-    background-size: cover !important;
+    /* background-size: cover !important; */
     min-height: 100vh;
     background-size: contain;
     background-position: center;

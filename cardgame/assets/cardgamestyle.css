@@ -14,9 +14,11 @@ src: url(./assets/fonts/starburst/Starburst.ttf);
 
 @font-face {
   font-family: "starcraft";
-  src: url(./font/starcraft/sta.ttf);
+  src: url(./font/starcraft/starcraft1.ttf);
   
   }
+ 
+
 .logo {
     font-size: 100px;
     padding-bottom: 5px;
@@ -24,9 +26,7 @@ src: url(./assets/fonts/starburst/Starburst.ttf);
 .nav-background{
 background-color: rgb(79, 9, 82);
 }
-/* * {
-    box-sizing: border-box;
-} */
+
 .body {
 color: white;
 font-family: starcraft;
@@ -59,143 +59,52 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    
   }
-/* 
-  .card-image:hover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+  .memory-game {
+    width: 550px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 500px;
+  }
+  
+  .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  }
+  
+  .memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .front-face,
+  .back-face {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-    transition: -webkit-transform 200ms ease-in;
-    transition: transform 200ms ease-in;
-    transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
-  } */
-  /* https://stackoverflow.com/questions/26923336/how-to-create-card-hover-style-effect-like-google-now-cards */
-
-
-.game-container{
-    perspective: 500px;
-}
-.game-info {
-    text-align: center;
-    font-size: 40px;
-}
-
-  .card-image:hover {
-    -webkit-animation: anim ease-out 0.5s 1;
-    animation: anim 0.5s 1;
-    transform: translateZ(100px);
-    cursor: pointer;
-    box-sizing: content-box 10px;
-    box-shadow: 0 20px 20px white;
-    /* box-shadow: 50px white; */
-    /* box-shadow: 10px white; */
-    opacity: 1;
-    /* border: black 2px solid; */
-    position: relative;
-    /* transform: translateY(1px); */
-    transform: scale(1.1);
-   
-      
+    position: absolute;
+    border-radius: 5px;
+    background: rgb(59, 69, 73);
+    backface-visibility: hidden;
+  }
+  
+  .front-face {
+    transform: rotateY(180deg);
   }
 
-  .logo {
-    font-size: 100px;
-    padding-bottom: 5px;
-}
-.nav-background{
-background-color: rgb(79, 9, 82);
-}
-/* * {
-    box-sizing: border-box;
-} */
-.body {
-color: white;
-font-family: starcraft;
-background-color: black;
-}
-
-.header-align {
-    text-align: center;
-    /* font-size: 5rem; */
-    /* color: rgb(241, 188, 72); */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 50%; */
-    /* width: 100%;
-    height: auto; */
-}
-.game-container {
-  /* margin: 50px auto; */
-  /* display: grid; */
-  /* grid-template-columns: repeat(4, auto); */
-  /* grid-gap: 10px; */
-  justify-content: center;
-  perspective: 500px;
-}
-
-.card {
-  position: relative;
-  cursor: url("Assets/Cursors/GhostHover.cur"), auto;
-  height: 150px;
-  width: 125px;
-  
-}
-
-.card-face {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  border-width: 1px;
-  border-style: none;
-  overflow: hidden;
-  transition: transform 500ms ease-in-out;
-  backface-visibility: hidden;
-  
-}
-
-.card:hover .card-back {
-  transform: rotateY(-180deg); 
-}
-
-.card:hover .card-front {
-  transform: rotateY(0); 
-}
-
-.card.matched .card-front .card-value {
-  animation: dance 1s linear infinite 500ms;
-}
-
-.card-back {
-
-  transform: rotateY(0); 
-  
-}
-
-
-.card-back:hover .planet-normal {
-  transform: translateY(0);
-}
-
-.card-value {
-  position: relative;
-  transition: transform 100ms ease-in-out;
-  /* transform: scale(.9); */
-}
-
-.card-front:hover .card-value {
-  /* transform: scale(1.1); */
-}
-
-.card-front {
-  transform: rotateY(180deg);
-}
+  .card-padding {
+    padding: 4px;
+    
+  }

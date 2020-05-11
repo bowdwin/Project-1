@@ -24,9 +24,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <!-- <-- Compiled and minified CSS -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-        <link rel="stylesheet" href="/Project-1/assets/styleapi.css" />
+
     </head>
 
     <body>
@@ -51,75 +49,51 @@
 
         <div class="container game-container">
             <div class="row">
-                <div class="game-info-container">
-                    <div class="col s6 game-info" id="remaining-time">Time <span></span>
-                    </div>
-                    <div class="col s6 game-info" id="flips">0</div>
+                <div class="game-info-container"></div>
+                <div class="col s6 game-info" id="remaining-time">Time <span></span>
                 </div>
-                <div class="container container-card">
-                    <div class="row card-row">
-                        <div class="col s2 m6 l2" style="margin: 5px;">
-                            <div class="card">
-                                <div class="card-back card-face">
-                                    <img class="planet-normal responsive-img" src="./assets/images/2.jpg">
-                                </div>
-                                <div class="card-front card-face">
-                                    <img class="card-value responsive-img" src="./assets/images/1.jpg">
-                                </div>
+                <div class="col s6 game-info" id="flips">0</div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s4 m4 l2">
+                        <div class="memory-game">
+                            <div class="memory-card" data-framework="moon">
+                                <img class="front-face card-padding" src="./assets/images/earth-card.png" alt="" />
+                                <img class="back-face" src="./assets/images/2.jpg" alt="" />
                             </div>
-                        </div>
-                        <div class="col s2 m6 l2" style="margin: 5px;">
-                            <div class="card">
-                                <div class="card-back card-face">
-                                    <img class="planet-normal responsive-img" src="./assets/images/2.jpg">
-                                </div>
-                                <div class="card-front card-face">
-                                    <img class="card-value responsive-img" src="./assets/images/1.jpg">
-                                </div>
+                            <div class="memory-card" data-framework="moon">
+                                <img class="front-face card-padding" src="./assets/images/earth-card.png" alt="" />
+                                <img class="back-face" src="./assets/images/2.jpg" alt="" />
                             </div>
-                        </div>
-                        <div class="col s2 m6 l2" style="margin: 5px;">
-                            <div class="card">
-                                <div class="card-back card-face">
-                                    <img class="planet-normal responsive-img" src="./assets/images/2.jpg">
-                                </div>
-                                <div class="card-front card-face">
-                                    <img class="card-value responsive-img" src="./assets/images/1.jpg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s2 m6 l2" style="margin: 5px;">
-                            <div class="card">
-                                <div class="card-back card-face">
-                                    <img class="planet-normal responsive-img" src="./assets/images/2.jpg">
-                                </div>
-                                <div class="card-front card-face">
-                                    <img class="card-value responsive-img" src="./assets/images/1.jpg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s2 m6 l2" style="margin: 5px;">
-                            <div class="card">
-                                <div class="card-back card-face">
-                                    <img class="planet-normal responsive-img" src="./assets/images/2.jpg">
-                                </div>
-                                <div class="card-front card-face">
-                                    <img class="card-value responsive-img" src="./assets/images/1.jpg">
-                                </div>
-                            </div>
-                        </div>
 
+                            <div class="memory-card" data-framework="sun">
+                                <img class="front-face card-padding" src="./assets/images/mars-card.png" alt="" />
+                                <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                            </div>
+                            <div class="memory-card" data-framework="sun">
+                                <img class="front-face card-padding" src="./assets/images/mars-card.png" alt="" />
+                                <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
             </div>
+            <!-- </div> -->
+
+            </section>
+
+
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.0.min.js"
-            integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
-        <script src="./assets/cardgamestyle.js"></script>
+        <script src="./assets/cardgame.js"></script>
     </body>
 
     </html>
