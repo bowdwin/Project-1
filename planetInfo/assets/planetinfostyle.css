@@ -30,12 +30,13 @@ h1{
     background-color: transparent;
     border-radius: 15px;
     border: transparent;
+    box-shadow: none!important;
 }
 
 .card-image{
     width: auto;
     height: auto;
-    object-fit: cover;
+    /* object-fit: cover; */
     
 }
 
