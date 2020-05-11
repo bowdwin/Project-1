@@ -61,7 +61,7 @@ body {
     background-repeat: no-repeat;
     
   }
-  .memory-game {
+  .planet-game {
     width: 550px;
     height: 400px;
     margin: auto;
@@ -70,7 +70,7 @@ body {
     perspective: 500px;
   }
   
-  .memory-card {
+  .aCard {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
     margin: 5px;
@@ -81,12 +81,12 @@ body {
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
   }
   
-  .memory-card:active {
+  .aCard:active {
     transform: scale(0.97);
     transition: transform .2s;
   }
   
-  .memory-card.flip {
+  .aCard.flip {
     transform: rotateY(180deg);
   }
   
