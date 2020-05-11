@@ -14,7 +14,7 @@ src: url(./assets/fonts/starburst/Starburst.ttf);
 
 @font-face {
   font-family: "starcraft";
-  src: url(./font/starcraft/starcraft2.ttf);
+  src: url(./font/starcraft/sta.ttf);
   
   }
 .logo {
@@ -44,7 +44,10 @@ background-color: black;
     /* width: 100%;
     height: auto; */
 }
-
+/* .card-image-back {
+    height: auto;
+    width: auto;
+} */
 /* .card-row {
     padding-left: 20px;
     padding-right: 20px;
@@ -57,6 +60,21 @@ body {
     background-position: center;
     background-repeat: no-repeat;
   }
+/* 
+  .card-image:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    transition: -webkit-transform 200ms ease-in;
+    transition: transform 200ms ease-in;
+    transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+  } */
+  /* https://stackoverflow.com/questions/26923336/how-to-create-card-hover-style-effect-like-google-now-cards */
 
 
 .game-container{
@@ -66,15 +84,7 @@ body {
     text-align: center;
     font-size: 40px;
 }
-  /* .rnd-corner {
-  
-        border-radius: 25px;
-        background: #73AD21;
-        padding: 20px;
-        width: 200px;
-        height: 150px;
-      
-  } */
+
   .card-image:hover {
     -webkit-animation: anim ease-out 0.5s 1;
     animation: anim 0.5s 1;
@@ -82,57 +92,62 @@ body {
     cursor: pointer;
     box-sizing: content-box 10px;
     box-shadow: 0 20px 20px white;
-    transform: scale(1.1);
-    opacity: 1;
-   
-    position: relative;
-
-  }
-     /* border: black 2px solid; */
-        /* box-shadow: 50px white; */
+    /* box-shadow: 50px white; */
     /* box-shadow: 10px white; */
+    opacity: 1;
+    /* border: black 2px solid; */
+    position: relative;
     /* transform: translateY(1px); */
+    transform: scale(1.1);
    
-  .card:hover .card-image-back {
-    transform: rotateY(-180deg);
+      
+  }
 
-} 
-
-/* .card.visable .card-image-back {
-    transform: rotateY(-180deg);
-
-}  */
-/* f */
-
-/* .card.visable .card-image-front {
-    transform: rotateY(0);
+  .logo {
+    font-size: 100px;
+    padding-bottom: 5px;
+}
+.nav-background{
+background-color: rgb(79, 9, 82);
+}
+/* * {
+    box-sizing: border-box;
 } */
-.card:hover .card-image-front {
-    transform: rotateY(0);
+.body {
+color: white;
+font-family: starcraft;
+background-color: black;
 }
 
-.card-image-back {
-  height: auto;
-  width: auto;
-  border-color: yellow;
+.header-align {
+    text-align: center;
+    /* font-size: 5rem; */
+    /* color: rgb(241, 188, 72); */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+    /* width: 100%;
+    height: auto; */
 }
-.card-image-front {
-  height: auto;
-  width: auto;
-transform: rotateY(0);
-}
-.card-image {
-  /* opacity: 0.95;
-  transition: 0.5s;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.game-container {
+  /* margin: 50px auto; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(4, auto); */
+  /* grid-gap: 10px; */
   justify-content: center;
-  transform: transform 500ms ease-in-out;
-  /* border-radius: 10px; 
-  border-width: 1px;
-  border-style: solid; 
-  border-color: yellow; */
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  cursor: url("Assets/Cursors/GhostHover.cur"), auto;
+  height: 150px;
+  width: 125px;
+  
+}
+
+.card-face {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -141,24 +156,46 @@ transform: rotateY(0);
   height: 100%;
   border-radius: 12px;
   border-width: 1px;
-  border-style: solid;
+  border-style: none;
   overflow: hidden;
   transition: transform 500ms ease-in-out;
   backface-visibility: hidden;
   
-} 
-
-.card {
-  position: relative;
-  /* transform-style: preserve-3d; */
 }
-/* <div class="card">
-      <div class="card-back card-face">
 
-        <img class="" src="Assets/Images/back.png">
-      </div>
-      <div class="card-front card-face">
+.card:hover .card-back {
+  transform: rotateY(-180deg); 
+}
 
-        <img class="card-value" src="Assets/Images/front.png">
-      </div> */
+.card:hover .card-front {
+  transform: rotateY(0); 
+}
+
+.card.matched .card-front .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.card-back {
+
+  transform: rotateY(0); 
   
+}
+
+
+.card-back:hover .planet-normal {
+  transform: translateY(0);
+}
+
+.card-value {
+  position: relative;
+  transition: transform 100ms ease-in-out;
+  /* transform: scale(.9); */
+}
+
+.card-front:hover .card-value {
+  /* transform: scale(1.1); */
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
