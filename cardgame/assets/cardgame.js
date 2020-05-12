@@ -1,5 +1,6 @@
 //queary selector for every card clicked and store in aCardSel
 var aCardSel = $('.aCard');
+var arrayCards = $('aCard').toArray();
 console.log(aCardSel);
 //boolean to know if the card was flipped
 var wasflipped = false;
@@ -71,6 +72,27 @@ function cardFlip(theCard) {
 }
 // console.log(firstCard.$());
 // if (firstCard.attr)
+function resetGame() {
+
+    firstCard = null;
+    secondCard = null;
+    freezeScreen = false;
+    wasflipped = false;
+
+
+}
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
+}
 
 function cardMatch() {
 
@@ -82,10 +104,8 @@ function cardNonMatch() {
 function updateScore() {
 
 }
-function randomCardPlacement() {
+function shuffleCards() {
 
+    console.log(arrayCards);
 }
 
-function freezeBoard() {
-
-}
