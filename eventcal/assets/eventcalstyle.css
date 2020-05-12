@@ -1,0 +1,25 @@
+body {
+  background-image: url("./imgs/background.jpg");
+  background-size: cover !important;
+  min-height: 100vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#calendar {
+  margin: 25px;
+  padding: 10px;
+  justify-self: start;
+}
+
+.text-astro {
+  text-align: center;
+  text-emphasis: underline;
+  font-family: fantasy;
+  background-color: floralwhite;
+}
+
+p {
+  background-color: ghostwhite;
+}

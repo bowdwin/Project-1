@@ -5,7 +5,6 @@ function displayPicOfDay() {
     url: nasaUrl,
     method: "GET",
   }).then(function (response) {
-    console.log(response);
     //A div to show the movie
     var photoDiv = $("<div class='photo-container'>");
 
