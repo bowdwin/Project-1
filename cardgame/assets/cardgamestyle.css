@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "aspace-font";
+    src: url(./font/a-space/a-space.italic.otf);
+  }
+@font-face {
+font-family: "death-star";
+src: url(./assets/fonts/death-star/DeathStar.otf);
+}
+@font-face {
+font-family: "star-burst";
+src: url(./assets/fonts/starburst/Starburst.ttf);
+
+}
+
+@font-face {
+  font-family: "starcraft";
+  src: url(./font/starcraft/starcraft1.ttf);
+  
+  }
+ 
+
+.logo {
+    font-size: 100px;
+    padding-bottom: 5px;
+}
+.nav-background{
+background-color: rgb(79, 9, 82);
+}
+
+.body {
+color: white;
+font-family: starcraft;
+background-color: black;
+}
+
+.header-align {
+    text-align: center;
+    /* font-size: 5rem; */
+    color: rgb(241, 188, 72);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* width: 100%;
+    height: auto; */
+}
+/* .card-image-back {
+    height: auto;
+    width: auto;
+} */
+/* .card-row {
+    padding-left: 20px;
+    padding-right: 20px;
+} */
+body {
+    background-image: url("./images/hdwall1.jpg");
+    background-size: cover !important;
+    min-height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  .planet-game {
+    width: 550px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 500px;
+  }
+  
+  .aCard {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+   
+  }
+  
+  .aCard:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+  .aCard.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background: rgb(59, 69, 73);
+    backface-visibility: hidden;
+    background-image: url("./images/cardback.jpg")
+  }
+  
+  .front-face {
+    transform: rotateY(180deg);
+  }
+
+  .card-padding {
+    padding: 4px;
+    
+  }
