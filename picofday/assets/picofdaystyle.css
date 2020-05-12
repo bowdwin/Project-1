@@ -1,0 +1,28 @@
+body {
+  background-image: url("./imgs/background.jpg");
+  background-size: cover !important;
+  min-height: 100vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  background-color: cornflowerblue;
+}
+
+h2 {
+  background-color: antiquewhite;
+}
+
+p {
+  background-color: antiquewhite;
+  border: 2px;
+}
+
+img {
+  flex: auto;
+}
