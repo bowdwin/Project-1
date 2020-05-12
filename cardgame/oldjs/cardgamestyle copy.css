@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "aspace-font";
+    src: url(./font/a-space/a-space.italic.otf);
+  }
+@font-face {
+font-family: "death-star";
+src: url(./assets/fonts/death-star/DeathStar.otf);
+}
+@font-face {
+font-family: "star-burst";
+src: url(./assets/fonts/starburst/Starburst.ttf);
+
+}
+
+@font-face {
+  font-family: "starcraft";
+  src: url(./font/starcraft/starcraft2.ttf);
+  
+  }
+.logo {
+    font-size: 100px;
+    padding-bottom: 5px;
+}
+.nav-background{
+background-color: rgb(79, 9, 82);
+}
+/* * {
+    box-sizing: border-box;
+} */
+.body {
+color: white;
+font-family: starcraft;
+background-color: black;
+}
+
+.header-align {
+    text-align: center;
+    /* font-size: 5rem; */
+    color: rgb(241, 188, 72);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* width: 100%;
+    height: auto; */
+}
+
+/* .card-row {
+    padding-left: 20px;
+    padding-right: 20px;
+} */
+body {
+    background-image: url("./images/hdwall1.jpg");
+    /* background-size: cover !important; */
+    min-height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+.game-container{
+    perspective: 500px;
+}
+.game-info {
+    text-align: center;
+    font-size: 40px;
+}
+  /* .rnd-corner {
+  
+        border-radius: 25px;
+        background: #73AD21;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+      
+  } */
+  .card-image:hover {
+    -webkit-animation: anim ease-out 0.5s 1;
+    animation: anim 0.5s 1;
+    transform: translateZ(100px);
+    cursor: pointer;
+    box-sizing: content-box 10px;
+    box-shadow: 0 20px 20px white;
+    transform: scale(1.1);
+    opacity: 1;
+   
+    position: relative;
+
+  }
+     /* border: black 2px solid; */
+        /* box-shadow: 50px white; */
+    /* box-shadow: 10px white; */
+    /* transform: translateY(1px); */
+   
+  .card:hover .card-image-back {
+    transform: rotateY(-180deg);
+
+} 
+
+/* .card.visable .card-image-back {
+    transform: rotateY(-180deg);
+
+}  */
+/* f */
+
+/* .card.visable .card-image-front {
+    transform: rotateY(0);
+} */
+.card:hover .card-image-front {
+    transform: rotateY(0);
+}
+
+.card-image-back {
+  height: auto;
+  width: auto;
+    /* border-radius: 10px;
+    border-width: 1px; */
+    border-color: yellow;
+}
+.card-image-front {
+transform: rotateY(0);
+}
+.card-image {
+  /* opacity: 0.95;
+  transition: 0.5s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  transform: transform 500ms ease-in-out;
+  /* border-radius: 10px; 
+  border-width: 1px;
+  border-style: solid; 
+  border-color: yellow; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
+  
+} 
+
+/* <div class="card">
+      <div class="card-back card-face">
+
+        <img class="" src="Assets/Images/back.png">
+      </div>
+      <div class="card-front card-face">
+
+        <img class="card-value" src="Assets/Images/front.png">
+      </div> */
+  

@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "aspace-font";
+    src: url(./font/a-space/a-space.italic.otf);
+  }
+@font-face {
+font-family: "death-star";
+src: url(./assets/fonts/death-star/DeathStar.otf);
+}
+@font-face {
+font-family: "star-burst";
+src: url(./assets/fonts/starburst/Starburst.ttf);
+
+}
+
+@font-face {
+  font-family: "starcraft";
+  src: url(./font/starcraft/starcraft1.ttf);
+  
+  }
+ */
+
+.logo {
+    font-size: 100px;
+    padding-bottom: 5px;
+}
+.nav-background{
+background-color: rgb(79, 9, 82);
+}
+/* * {
+    box-sizing: border-box;
+} */
+.body {
+color: white;
+font-family: starcraft;
+background-color: black;
+}
+
+.header-align {
+    text-align: center;
+    /* font-size: 5rem; */
+    color: rgb(241, 188, 72);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* width: 100%;
+    height: auto; */
+}
+/* .card-image-back {
+    height: auto;
+    width: auto;
+} */
+/* .card-row {
+    padding-left: 20px;
+    padding-right: 20px;
+} */
+body {
+    background-image: url("./images/hdwall1.jpg");
+    background-size: cover !important;
+    min-height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+/* 
+  .card-image:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    transition: -webkit-transform 200ms ease-in;
+    transition: transform 200ms ease-in;
+    transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+  } */
+  /* https://stackoverflow.com/questions/26923336/how-to-create-card-hover-style-effect-like-google-now-cards */
+
+
+.game-container{
+    perspective: 500px;
+    position: relative;
+    
+}
+.game-info {
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+  /* .card-image:hover {
+    -webkit-animation: anim ease-out 0.5s 1;
+    animation: anim 0.5s 1;
+    transform: translateZ(100px);
+    cursor: pointer;
+    box-sizing: content-box 10px;
+    box-shadow: 0 20px 20px white;
+  
+    opacity: 1;
+  
+    position: relative;
+  
+    transform: scale(1.1); */
+      /* transform: translateY(1px); */
+     /* border: black 2px solid; */
+        /* box-shadow: 50px white; */
+    /* box-shadow: 10px white; */
+  /* } */
+
+.logo {
+  font-size: 100px;
+  padding-bottom: 5px;
+}
+.nav-background{
+background-color: rgb(79, 9, 82);
+}
+/* * {
+    box-sizing: border-box;
+} */
+.body {
+color: white;
+font-family: starcraft;
+background-color: black;
+}
+
+.header-align {
+    text-align: center;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+
+}
+.game-container {
+
+  justify-content: center;
+  perspective: 500px;
+  
+  
+  
+  /* box-shadow: rgba(0, 0, 0, 0); */
+}
+
+.card {
+  position: relative;
+  /* cursor: url("Assets/Cursors/GhostHover.cur"), auto; */
+  height: 300px;
+  width: 125px;
+  width: auto;
+  display: flex;
+  background:none !important;
+  /* border: 0px; */
+  /* border:none !important; */
+  background-origin: padding-box;
+  
+  
+}
+
+.card-face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border-width: 1px;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
+  display: flex;
+  
+  
+}
+
+.card:hover .card-back {
+  transform: rotateY(-180deg); 
+}
+
+.card:hover .card-front {
+  transform: rotateY(0); 
+}
+
+.card.matched .card-front .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.card-back {
+
+  transform: rotateY(0); 
+  display: flex;
+  
+}
+
+
+.card-back:hover .planet-normal {
+  transform: translateY(0);
+}
+
+.card-value {
+  position: relative;
+  transition: transform 100ms ease-in-out;
+  /* transform: scale(.9); */
+}
+
+/* .card-front:hover .card-value {
+  transform: scale(1.1);
+} */
+
+.card-front {
+  transform: rotateY(180deg);
+}
+.responsive-img {
+  
+}

@@ -15,108 +15,303 @@
         <h1>Solar System Information</h1>
         <p id=header-p>Click on the planet to learn more!</p>
     </header>
-    <div class="planet-container">
-        <div class="row1-container valign-wrapper">
-            <div class="row">
-                <div class="col 3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="https://www.stickpng.com/assets/images/580b585b2edbce24c47b2709.png">
-                            <span class="card-title">Mercury</span>
+    <div class="planet-container valign-wrapper">
+        <div class="row">
+            <!-- **********************************Mercury Card********************************** -->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="col s12 m6 l3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://www.stickpng.com/assets/images/580b585b2edbce24c47b2709.png">
+                                    <span class="card-title">Mercury</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="col s12 m6 l3">
+                            <div class="card transparent">
+                                <div class="card-content white-text">
+                                    <span class="card-title white-text">Mercury</span>
+                                    <div id="mercuryCard"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col 3 push-l1.5">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="https://www.pngmart.com/files/4/Venus-PNG-Transparent-Image.png">
-                            <span class="card-title">Venus</span>
+            </div>
+            <!-- **********************************Venus Card********************************** -->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="col m3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://www.pngmart.com/files/4/Venus-PNG-Transparent-Image.png">
+                                    <span class="card-title">Venus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="col 3">
+                            <div class="card transparent">
+                                <div class="card-content white-text">
+                                    <span class="card-title white-text">Venus</span>
+                                    <div id="venusCard"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col 3 push-l.5">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="https://pngimg.com/uploads/earth/earth_PNG39.png">
-                            <span class="card-title">Earth</span>
+            </div>
+            <!-- **********************************Earth Card********************************** -->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="col 3 push-l1">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://pngimg.com/uploads/earth/earth_PNG39.png">
+                                    <span class="card-title">Earth</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="col 3 push-l1">
+                            <div class="card transparent">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Earth</span>
+                                    <div id="earthCard"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col 3 push-l1.5">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="https://pngimg.com/uploads/mars_planet/mars_planet_PNG15.png">
-                            <span class="card-title">Mars</span>
+            </div>
+            <!-- **********************************Mars Card********************************** -->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="col 3 push-l2">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://pngimg.com/uploads/mars_planet/mars_planet_PNG15.png">
+                                    <span class="card-title">Mars</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="col 3 push-l2">
+                            <div class="card white">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Mars</span>
+                                    <div id="marsCard"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row1-container valign-wrapper">
-            <div class="row">
-                <div class="col 3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="https://i.ya-webdesign.com/images/jupiter-png-2.png">
-                            <span class="card-title">Jupiter</span>
+    </div>
+    <!-- **********************************Next Row********************************** -->
+    <div class="planet-container valign-wrapper">
+        <div class="row">
+            <!-- **********************************Jupiter Card********************************** -->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="col 3 pull-l1">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://i.ya-webdesign.com/images/jupiter-png-2.png">
+                                    <span class="card-title">Jupiter</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="col 3 pull-l1">
+                            <div class="card white">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Jupiter</span>
+                                    <div id="jupiterCard"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col 3 push-l1.5">
-                    <div class="card">
-                        <div class="card-image">
-                            <img
-                                src="https://i2.wp.com/freepngimages.com/wp-content/uploads/2016/04/saturn-transparent-background-planet-1.png?w=797">
-                            <span class="card-title">Saturn</span>
+            </div>
+            <!-- **********************************Saturn Card********************************** -->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="col m3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img
+                                        src="https://i2.wp.com/freepngimages.com/wp-content/uploads/2016/04/saturn-transparent-background-planet-1.png?w=797">
+                                    <span class="card-title">Saturn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="col 3">
+                            <div class="card white">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Saturn</span>
+                                    <div id="saturnCard"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col 3 push-l.5">
-                    <div class="card">
-                        <div class="card-image">
-                            <img
-                                src="https://img.pngio.com/fileuranus2-transparentpng-wikimedia-commons-uranus-transparent-1407_1407.png">
-                            <span class="card-title">Uranus</span>
+            </div>
+            <!-- **********************************Uranus Card********************************** -->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="col 3 push-l1">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img
+                                        src="https://img.pngio.com/fileuranus2-transparentpng-wikimedia-commons-uranus-transparent-1407_1407.png">
+                                    <span class="card-title">Uranus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="col 3 push-l1">
+                            <div class="card white">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Uranus</span>
+                                    <div id="uranusCard"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col 3 push-l1.5">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="https://i.ya-webdesign.com/images/neptune-png-image.png">
-                            <span class="card-title">Neptune</span>
+            </div>
+            <!-- **********************************Neptune Card********************************** -->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="col 3 push-l2">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://i.ya-webdesign.com/images/neptune-png-image.png">
+                                    <span class="card-title">Neptune</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="col 3 push-l2">
+                            <div class="card white">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Neptune</span>
+                                    <div id="neptuneCard"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="planet-container">
-            <div class="row1-container valign-wrapper">
-                <div class="row">
-                    <div class="col 3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img
-                                    src="https://vignette.wikia.nocookie.net/thesolarsystem6361/images/0/0a/Pluto_spacepedia.png/revision/latest/scale-to-width-down/340?cb=20180302130217">
-                                <span class="card-title">Pluto</span>
+    </div>
+    <!-- **********************************Next Row********************************** -->
+    <div class="planet-container valign-wrapper">
+        <div class="row">
+            <!-- **********************************Pluto Card********************************** -->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="col 3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img
+                                        src="https://vignette.wikia.nocookie.net/thesolarsystem6361/images/0/0a/Pluto_spacepedia.png/revision/latest/scale-to-width-down/340?cb=20180302130217">
+                                    <span class="card-title">Pluto</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col 3 push-l1.5">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="https://scx2.b-cdn.net/gfx/news/hires/2017/newcluetosol.png">
-                                <span class="card-title">Sun</span>
+                    <div class="back">
+                        <div class="col 3">
+                            <div class="card white">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Pluto</span>
+                                    <div id="plutoCard"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Compiled and minified JavaScript -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-                <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-                    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-                <sciprt src="/planetInfo/assets/planetinfo.js"></sciprt>
+            </div>
+            <!-- **********************************Sun Card********************************** -->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="col 3 push-l1">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="https://www.stickpng.com/assets/images/580b585b2edbce24c47b270f.png">
+                                    <span class="card-title">Sun</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="col 3 push-l1">
+                            <div class="card white">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Sun</span>
+                                    <div id="sunCard"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- **********************************Moon Card********************************** -->
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="col 3 push-l1">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="/planetInfo/assets/images/moon.png">
+                                    <span class="card-title">Moon</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="col 3 push-l1">
+                            <div class="card white">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Moon</span>
+                                    <div id="moonCard"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/planetInfo/assets/planetinfo.js"></script>
 </body>
 
 </html>

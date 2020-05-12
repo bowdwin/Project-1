@@ -11,20 +11,190 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/cardgamestyle.css">
 </head>
 
-<body>
+<body class="body">
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- <-- Compiled and minified CSS -->
+
+    </head>
+
+    <body>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper nav-background">
+                <a href="#!" class="brand-logo">Logo</a>
+                <img src="./assets/images/astro.png">
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2 class="header-align">Match The Planets</h2>
+
+        <!-- <h1 class="header-align"> M•tch The Pl•nets</h1>
+         -->
+        <!-- <img class="header-align" src="./assets/images/matchtheplanets_50_CF910C.png" alt=""> -->
+
+        <div class="container game-container">
+            <div class="row">
+                <div class="game-info-container"></div>
 
 
+                <div class="col s3 m4 l4 game-info" id="mathes">
+                    <p class="matches-flips">Matches</p>
+                    <p class="matches-flips">0</p>
 
+                </div>
+                <div class="col s3 m4 l4 game-info" id="mathes">
+                    <p class="matches-flips">Flips</p>
+                    <p class="matches-flips">0</p>
+                </div>
+                <div class="col s3 m4 l4 game-info" id="mathes">
+                    <a class="waves-effect waves-light btn-small">Restart</a>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m6 l2">
+                            <div class="planet-game container">
+                                <!-- mercury cards  -->
+                                <div class="aCard" data-cardatt="mercury">
+                                    <img class="front-face card-padding" src="./assets/images/mercury-card.png"
+                                        alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <div class="aCard" data-cardatt="mercury">
+                                    <img class="front-face card-padding" src="./assets/images/mercury-card.png"
+                                        alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <!-- venus cards  -->
+                                <div class="aCard" data-cardatt="venus">
+                                    <img class="front-face card-padding" src="./assets/images/venus-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <div class="aCard" data-cardatt="venus">
+                                    <img class="front-face card-padding" src="./assets/images/venus-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
-        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="./assets/cardgame.js"></script>
-</body>
+                                <!-- earth cards  -->
+                                <div class="aCard" data-cardatt="earth">
+                                    <img class="front-face card-padding" src="./assets/images/earth-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <div class="aCard" data-cardatt="earth">
+                                    <img class="front-face card-padding" src="./assets/images/earth-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <!-- mars cards -->
+                                <div class="aCard" data-cardatt="mars">
+                                    <img class="front-face card-padding" src="./assets/images/mars-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <div class="aCard" data-cardatt="mars">
+                                    <img class="front-face card-padding" src="./assets/images/mars-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <!-- jupiter cards -->
+                                <div class="aCard" data-cardatt="jupiter">
+                                    <img class="front-face card-padding" src="./assets/images/jupiter-card.png"
+                                        alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <div class="aCard" data-cardatt="jupiter">
+                                    <img class="front-face card-padding" src="./assets/images/jupiter-card.png"
+                                        alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <!-- saturn cards  -->
+                                <div class="aCard" data-cardatt="saturn">
+                                    <img class="front-face card-padding" src="./assets/images/saturn-card.png" alt="" />
+                                    <img class=" back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <div class="aCard" data-cardatt="saturn">
+                                    <img class="front-face card-padding" src="./assets/images/saturn-card.png" alt="" />
+                                    <img class=" back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <!-- uranis card  -->
+                                <div class="aCard" data-cardatt="uranus">
+                                    <img class="front-face card-padding" src="./assets/images/uranus-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <div class="aCard" data-cardatt="uranus">
+                                    <img class="front-face card-padding" src="./assets/images/uranus-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <!-- neptune card  -->
+                                <div class="aCard" data-cardatt="neptune">
+                                    <img class="front-face card-padding" src="./assets/images/neptune-card.png"
+                                        alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <div class="aCard" data-cardatt="neptune">
+                                    <img class="front-face card-padding" src="./assets/images/neptune-card.png"
+                                        alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <!-- pluto card  -->
+                                <div class="aCard" data-cardatt="pluto">
+                                    <img class="front-face card-padding" src="./assets/images/pluto-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <div class="aCard" data-cardatt="pluto">
+                                    <img class="front-face card-padding" src="./assets/images/pluto-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <!-- sun  -->
+                                <div class="aCard" data-cardatt="sun">
+                                    <img class="front-face" src="./assets/images/sun-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <div class="aCard" data-cardatt="sun">
+                                    <img class="front-face" src="./assets/images/sun-card.png" alt="" />
+                                    <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                                </div>
+                                <!-- moon  -->
+                                <!-- <div class="aCard" data-cardatt="moon">
+                                <img class="front-face card-padding" src="./assets/images/moon-card.png" alt="" />
+                                <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                            </div>
+                            <div class="aCard" data-cardatt="moon">
+                                <img class="front-face card-padding" src="./assets/images/moon-card.png" alt="" />
+                                <img class="back-face" src="./assets/images/2.jpg" alt="" />
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
 
-</html>
+                </div>
+                <!-- </div> -->
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.5.1.js"
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="./assets/cardgame.js"></script>
+    </body>
+
+    </html>
