@@ -1,8 +1,16 @@
+@font-face {
+    font-family: "starcraft";
+    src: url(/planetInfo/assets/font/starcraft.ttf);
+    }
+
 HTML, body {
 background-image: url(/planetInfo/assets/images/wallpaper.jpg);
-background-repeat: no-repeat;
+background-size: cover !important;
+min-height: 100vh;
+background-size: contain;
 background-position: center;
-background-size: cover;
+background-repeat: no-repeat;
+font-family: starcraft;
 }
 
 header{
@@ -25,13 +33,28 @@ h1{
     padding-top: 20px;
 }
 .card{
+    position: relative;
     width: 400px;
     height: 400px;
     background-color: transparent;
     border-radius: 15px;
     border: transparent;
     box-shadow: none!important;
+    text-align: center;
 }
+
+@media (max-width: 990px) {
+    .resizeimg {
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .resizeimg {
+      width: auto;
+      height: 350px;
+    }
+  }
 
 .card-image{
     width: auto;
