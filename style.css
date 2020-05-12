@@ -1,1 +1,164 @@
+/*planet creation used and edited from: https://www.youtube.com/watch?v=9HXpirUu_H4 */
+/* I have created 2 more planets changed their sizes, positions, changed speed, removed code from original code.*/
 
+* .section {
+	background: rgba(76, 175, 80, 0.1);
+}
+/* body {
+	background: url(practice-project1/assets/img/stars.jpg);
+	background-size: cover;
+	background-position: bottom;
+	height: 100vh;
+} */
+
+nav {
+	background-color: transparent !important;
+	margin-bottom: 50px;
+}
+
+.earth,
+.mars {
+	width: 125px;
+	height: 120px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+	border-radius: 50%;
+	box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+}
+
+.earth:after,
+.mars:after,
+.neptune:after,
+.venus:after {
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: -20px -20px 50px 2px #000 inset;
+	border-radius: 50%;
+}
+
+.earth > div {
+	width: 200%;
+	height: 100%;
+	animation: spin 55s linear alternate infinite;
+	background: url(practice-project1/assets/img/earthmap.jpg);
+	background-size: cover;
+}
+
+.mars > div {
+	width: 200%;
+	height: 100%;
+	animation: spin 55s linear alternate infinite;
+	background: url(practice-project1/assets/img/mars.jpg);
+	background-size: cover;
+}
+
+.venus {
+	width: 150px;
+	height: 150px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+	border-radius: 50%;
+	box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+}
+
+.venus > div {
+	width: 200%;
+	height: 100%;
+	animation: spin 55s linear alternate-reverse infinite;
+	background: url(practice-project1/assets/img/venusmap.jpg);
+	background-size: cover;
+}
+
+.neptune {
+	width: 100px;
+	height: 100px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+	border-radius: 50%;
+	box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+}
+
+.neptune > div {
+	width: 200%;
+	height: 100%;
+	animation: spin 30s linear alternate-reverse infinite;
+	background: url(practice-project1/assets/img/neptune.jpg);
+	background-size: cover;
+}
+
+@keyframes spin {
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+.spaceship img {
+	height: 150px;
+	width: 150px;
+	position: relative;
+}
+
+.spaceship a {
+	position: relative;
+}
+
+#red-alien {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	/* animation: shake 0.5s;
+	animation-iteration-count: infinite; */
+}
+
+#redspaceship {
+	margin-top: 100px;
+}
+#redspaceship {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+}
+
+/*adjusts texts that animate welcome message*/
+
+h1 {
+	color: white;
+}
+#intro {
+	margin-top: 15rem;
+}
+/* canvas {
+	margin-bottom: 0px !important;
+} */
+p {
+	color: white;
+	font-size: 20px;
+	margin-left: 85px;
+}
+
+/*center the text above planets*/
+#match {
+	margin-left: 120px;
+}
+
+#events {
+	margin-left: 115px;
+}
+#centersolar {
+	margin-left: 100px;
+}
