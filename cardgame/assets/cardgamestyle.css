@@ -35,7 +35,14 @@ src: url(./assets/fonts/starburst/Starburst.ttf);
   
   }
  
+.btn-small {
+  background-color: rgb(79, 9, 82);
+} 
 
+.matches-flips {
+  text-align: right;
+  /* padding-left: ; */
+}
 .logo {
     font-size: 100px;
     padding-bottom: 5px;
