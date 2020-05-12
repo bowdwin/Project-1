@@ -1,3 +1,20 @@
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width:50%;
+  }
+}
+
+
 @font-face {
     font-family: "aspace-font";
     src: url(./font/a-space/a-space.italic.otf);
@@ -18,13 +35,24 @@ src: url(./assets/fonts/starburst/Starburst.ttf);
   
   }
  
+.btn-small {
+  background-color: rgb(79, 9, 82);
+} 
 
+.matches-flips {
+  text-align: right;
+  /* padding-left: ; */
+}
 .logo {
     font-size: 100px;
     padding-bottom: 5px;
 }
-.nav-background{
-background-color: rgb(79, 9, 82);
+.nav-wrapper{
+background-color: rgb(79, 9, 82) !important;
+
+/* background-size: contain;
+background-position: center;
+background-repeat: no-repeat; */
 }
 
 .body {
@@ -58,21 +86,49 @@ body {
     min-height: 100vh;
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+  
+
+    
+    
+  }
+
+  .game-container {
+    margin-left: 20%;
     
   }
   .planet-game {
     width: 550px;
     height: 400px;
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     flex-wrap: wrap;
-    perspective: 500px;
+    perspective: 1000px;
   }
   
+  .aCard:hover {
+    -webkit-animation: anim ease-out 0.5s 1;
+    animation: anim 0.5s 1;
+    transform: translateZ(100px);
+    cursor: url('./images/Saturn-icon.png'), auto;
+    box-sizing: content-box 10px;
+    box-shadow: 0 30px 30px white;
+    /* box-shadow: 50px white; */
+    /* box-shadow: 10px white; */
+    opacity: 1;
+    /* border: black 2px solid; */
+    position: relative;
+    /* transform: translateY(1px); */
+    transform: scale(1.1);
+   
+      
+  }
+  /* https://stackoverflow.com/questions/26923336/how-to-create-card-hover-style-effect-like-google-now-cards */
+
+
   .aCard {
     width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
+    height: calc(35% - 10px);
     margin: 5px;
     position: relative;
     transform: scale(1);
@@ -99,7 +155,9 @@ body {
     border-radius: 5px;
     background: rgb(59, 69, 73);
     backface-visibility: hidden;
-    background-image: url("./images/cardback.jpg")
+    background-image: url("./images/cardback.jpg");
+    border: rgb(189, 162, 10) solid 1px;
+    
   }
   
   .front-face {
