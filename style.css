@@ -1,15 +1,9 @@
 /*planet creation used and edited from: https://www.youtube.com/watch?v=9HXpirUu_H4 */
 /* I have created 2 more planets changed their sizes, positions, changed speed, removed code from original code.*/
 
-* .section {
+.section {
 	background: rgba(76, 175, 80, 0.1);
 }
-/* body {
-	background: url(practice-project1/assets/img/stars.jpg);
-	background-size: cover;
-	background-position: bottom;
-	height: 100vh;
-} */
 
 nav {
 	background-color: transparent !important;
@@ -46,7 +40,7 @@ nav {
 .earth > div {
 	width: 200%;
 	height: 100%;
-	animation: spin 55s linear alternate infinite;
+	animation: spin 40s linear alternate infinite;
 	background: url(practice-project1/assets/img/earthmap.jpg);
 	background-size: cover;
 }
@@ -54,7 +48,7 @@ nav {
 .mars > div {
 	width: 200%;
 	height: 100%;
-	animation: spin 55s linear alternate infinite;
+	animation: spin 40s linear alternate infinite;
 	background: url(practice-project1/assets/img/mars.jpg);
 	background-size: cover;
 }
@@ -75,7 +69,7 @@ nav {
 .venus > div {
 	width: 200%;
 	height: 100%;
-	animation: spin 55s linear alternate-reverse infinite;
+	animation: spin 40s linear alternate-reverse infinite;
 	background: url(practice-project1/assets/img/venusmap.jpg);
 	background-size: cover;
 }
@@ -140,11 +134,12 @@ h1 {
 	color: white;
 }
 #intro {
-	margin-top: 15rem;
+	margin-top: 20rem;
+	margin-right: 35%;
 }
-/* canvas {
-	margin-bottom: 0px !important;
-} */
+canvas {
+	height: 400px !important;
+}
 p {
 	color: white;
 	font-size: 20px;
@@ -161,4 +156,61 @@ p {
 }
 #centersolar {
 	margin-left: 100px;
+}
+
+/* asteroid code cite source: https://support.cargo.site/Make-an-Image-Fly-Across-the-Screen */
+.asteroid {
+	pointer-events: none;
+}
+
+.asteroid > * {
+	/* Adjust animation duration to change the element’s speed */
+	animation: fly 100s linear infinite;
+	pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+	height: 50px;
+}
+
+@keyframes fly {
+	98.001%,
+	0% {
+		display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg);
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg);
+	}
+
+	15.001%,
+	18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg);
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg);
+	}
+
+	40.001%,
+	43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg);
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg);
+	}
+
+	65.001%,
+	68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg);
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg);
+	}
 }

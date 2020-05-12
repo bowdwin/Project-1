@@ -2,23 +2,29 @@
 
 $(document).ready(function() {
 	//initial background color is black then user answers question and goes to starry background
+
 	var width = $('.container').width();
+
 	//still editing//
-	var groundPosition = '230px';
+	var groundPosition = '100px';
 
 	//redship position
 	var redshipTop = groundPosition;
 	var redshipLeft = '400px';
 
+	//fade in the background music//
+	$('#audiolvl')[0].volume = 0;
+	$('#audiolvl').animate({ volume: 0.2 }, 4000);
+
 	$('body').css('background-color', 'black');
 
 	//fading in the intro//
-	$('#intro').fadeIn(2000).removeClass('hide');
+	$('#intro').fadeIn(4000).removeClass('hide');
 
 	////-------ANIMATION BUTTON------//
 	$('#button1').on('click', function(event) {
 		$('.container').removeClass('valign-wrapper');
-		var imageUrl = 'practice-project1/assets/img/stars.jpg';
+		let imageUrl = 'practice-project1/assets/img/stars.jpg';
 		$('body').css('background', 'url(' + imageUrl + ')');
 		$('body').css('background-size', 'cover');
 		$('body').css('background-position', 'bottom');
@@ -30,20 +36,25 @@ $(document).ready(function() {
 		}, 500);
 
 		//Planets fade in and out
-		$('#earth').fadeIn(3000).removeClass('hide');
+		$('#earth').fadeIn(6000).removeClass('hide');
 		$('#mars').fadeIn(10000).removeClass('hide');
 		$('#venus').fadeIn(7000).removeClass('hide');
 		$('#neptune').fadeIn(7000).removeClass('hide');
+		$('#navbarfade').fadeIn(8000).removeClass('hide');
 
 		//unhide the first alien ship
-		$('.spaceship').fadeIn(3000).removeClass('hide');
+		$('.spaceship').fadeIn(4000).removeClass('hide');
+
+		$('#audiospaceship')[0].volume = 0;
+		$('#audiospaceship')[0].play();
+		$('#audiospaceship').animate({ volume: 0.5 }, 4000);
 
 		setTimeout(goRight, 50);
 	});
 
 	//-------NO ANIMATION BUTTON------//
 	$('#button2').on('click', function(event) {
-		var imageUrl = 'practice-project1/assets/img/stars.jpg';
+		let imageUrl = 'practice-project1/assets/img/stars.jpg';
 		$('body').css('background', 'url(' + imageUrl + ')');
 		$('body').css('background-size', 'cover');
 		$('body').css('background-position', 'bottom');
@@ -60,12 +71,19 @@ $(document).ready(function() {
 		$('#mars').fadeIn(10000).removeClass('hide');
 		$('#venus').fadeIn(7000).removeClass('hide');
 		$('#neptune').fadeIn(7000).removeClass('hide');
+		$('#navbarfade').fadeIn(8000).removeClass('hide');
 	});
 
 	//explode when click blue alien ship
 	$('#triggerspaceship').on('click', function(event) {
+		//play the exlosion
+		let explosionAudio = $('<Audio></Audio>');
+		explosionAudio[0].src = 'practice-project1/assets/sounds/explosion.wav';
+		explosionAudio[0].play();
+		//stop audio for spaceship engine//
+		$('#audiospaceship')[0].pause();
 		//img explode plugin//
-		$('#explodeship').explodeRestore();
+
 		//used to edit the animation, speed of explosion animation//
 		$('#explodeship').explode({
 			omitLastLine: false,
@@ -74,7 +92,7 @@ $(document).ready(function() {
 			release: true,
 			fadeTime: 300,
 			recycle: true,
-			recycleDelay: 50,
+			recycleDelay: 10,
 			fill: true,
 			explodeTime: 300,
 			maxAngle: 360,
@@ -100,8 +118,13 @@ $(document).ready(function() {
 		//stops the animate from moving//
 		$('#triggerspaceship').stop();
 
+		//alien voice and delay//
+		let redAlienAudio = $('<Audio></Audio>');
+		redAlienAudio[0].src = 'practice-project1/assets/sounds/alienvoice.mp3';
+		redAlienAudio[0].play();
+
 		var redShip = $(
-			'<img id="redspaceship"src="practice-project1/assets/img/redspaceship.png" alt="red spaceship" style = "left:800px; top:650px" > '
+			'<img id="redspaceship"src="practice-project1/assets/img/redspaceship.png" alt="red spaceship" style = "left:800px; top:550px" > '
 		);
 		//drop the alien to the ground
 		$('#red-alien').animate(
@@ -111,6 +134,7 @@ $(document).ready(function() {
 			1500,
 			function() {
 				$('.container').append(redShip);
+				$('#redspaceship')[0].play();
 			}
 		);
 
@@ -125,9 +149,6 @@ $(document).ready(function() {
 				redShip.toggle('scale').delay(2000);
 			}
 		);
-
-		//shake the alien
-		//$('#red-alien').effect('shake', { direction: 'up', direction: 'down', times: 10, distance: 8 }, 3000);
 
 		//diable the click
 		$('#triggerspaceship').off('click');
@@ -179,4 +200,5 @@ $(document).ready(function() {
 			}
 		);
 	}
+	//sets the lvl of background music//
 }); ///this is the bottom of document ready
