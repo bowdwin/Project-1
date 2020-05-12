@@ -8,22 +8,18 @@ var firstCard;
 var secondCard;
 var matchScore = 0;
 
-//event listener when a card is clicked
-// $('.aCard').click(function (e) {
-// e.preventDefault();
-// var cardFlipped
-// console.log(this);
-//calls this flip card function and passes in the card that was clicked
-// cardFlip(this);
+var freezeScreen = false;
 
 // });
 $(aCardSel).on("click", function () {
     console.log($(this).text());
     cardFlip(this);
+
 });
 
 //function called to flip card
 function cardFlip(theCard) {
+    if (freezeScreen === true) return;
     console.log(theCard)
     //adds or removes flip class to aCard class
     $(theCard).toggleClass('flip')
@@ -31,13 +27,14 @@ function cardFlip(theCard) {
     if (wasflipped === false) {
         //set card flipped to true
         wasflipped = true;
+        //store card info in first card
         firstCard = theCard;
         // console.log(firstCard, wasflipped);
 
 
     }
     else {
-        cardFlipped = false;
+        wasflipped = false;
         secondCard = theCard;
         // check if first card data attr matches 2nd card
         if (firstCard.getAttribute('data-cardatt') === secondCard.getAttribute('data-cardatt')) {
@@ -49,16 +46,21 @@ function cardFlip(theCard) {
             $(firstCard).off('click');
             $(secondCard).off('click');
 
-
+            console.log(firstCard, " first card in if ")
+            console.log(secondCard, " first card in if ")
+            // firstCard = null;
+            // secondCard = null;
         }
         else {
             //set a timer of 2 seconds to see the card flip back and remove the class flip from the cards
+            freezeScreen = true;
             setTimeout(() => {
                 $(firstCard).removeClass('flip');
                 $(secondCard).removeClass('flip');
-                firstCard = null;
-                secondCard = null;
-            }, 2000);
+                // firstCard = null;
+                // secondCard = null;
+                freezeScreen = false;
+            }, 1000);
         }
 
     }
@@ -78,5 +80,12 @@ function cardNonMatch() {
 
 }
 function updateScore() {
+
+}
+function randomCardPlacement() {
+
+}
+
+function freezeBoard() {
 
 }

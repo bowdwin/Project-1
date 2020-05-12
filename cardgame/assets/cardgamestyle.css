@@ -79,6 +79,7 @@ body {
     transform-style: preserve-3d;
     transition: transform .5s;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+   
   }
   
   .aCard:active {
@@ -98,6 +99,7 @@ body {
     border-radius: 5px;
     background: rgb(59, 69, 73);
     backface-visibility: hidden;
+    background-image: url("./images/cardback.jpg")
   }
   
   .front-face {
