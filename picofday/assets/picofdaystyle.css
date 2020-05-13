@@ -1,6 +1,5 @@
- 
 body {
-  background-image: url("./imgs/background.jpg");
+  background-image: url("./imgs/backgroundm.jpg");
   background-size: cover !important;
   min-height: 100vh;
   background-size: contain;
@@ -27,4 +26,3 @@ p {
 img {
   flex: auto;
 }
-
