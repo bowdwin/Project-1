@@ -3,14 +3,31 @@
   max-width: 1280px;
   width: 100%;
 }
-@media only screen and (min-width: 601px) {
-  .container {
-    width: 85%;
+@media only screen and (max-width: 601px) {
+  .planet-game {
+    /* width: 85%; */
+    width: 300px;
+    height: 150px;
+  }
+  .header-align{
+    /* font-size: 20px; */
+  }
+  .nav-background{
+    width: 601px;
+  }
+  body{
+    width: 600px;
   }
 }
-@media only screen and (min-width: 993px) {
-  .container {
-    width:50%;
+@media only screen and (min-width: 602px) {
+  .planet-game {
+    /* width:50%; */
+    /* align-items: center; */
+    /* padding-left: 100px; */
+    margin-left: 25%;
+  }
+  .row {
+    margin-left: 25%;
   }
 }
 
@@ -94,16 +111,16 @@ body {
   }
 
   .game-container {
-    margin-left: 20%;
+    /* margin-left: 20%; */
     
   }
   .planet-game {
     width: 550px;
     height: 400px;
-    /* margin: auto; */
+    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    perspective: 1000px;
+   flex-wrap: wrap; 
+    perspective: px;
   }
   
   .aCard:hover {

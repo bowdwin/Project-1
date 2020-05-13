@@ -131,4 +131,3 @@ function updateScore() {
 
 //     console.log(arrayCards);
 // }
-
