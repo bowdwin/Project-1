@@ -200,10 +200,13 @@ $(document).ready(function () {
     }
     function matchSound() {
         var errorSound = new Audio("./assets/sounds/ding.wav");
-        errorSound.volume = .3;
+        errorSound.volume = .1;
         errorSound.play();
     }
 
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
 });
 // function shuffleCards() {
 
