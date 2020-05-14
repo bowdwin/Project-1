@@ -53,7 +53,8 @@ src: url(./assets/fonts/starburst/Starburst.ttf);
   }
  
 .btn-small {
-  background-color: rgb(79, 9, 82);
+  background-color: #1A237E;
+  border: solid white 1px;
 } 
 
 
@@ -82,7 +83,8 @@ background-color: black;
 .header-align {
     text-align: center;
     /* font-size: 5rem; */
-    color: rgb(241, 188, 72);
+    /* color: rgb(241, 188, 72); */
+    color:white;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -177,7 +179,8 @@ body {
   background: rgb(59, 69, 73);
   backface-visibility: hidden;
   background-image: url("./images/cardback.jpg");
-  border: rgb(235, 201, 13) solid 1px;
+  /* border: rgb(235, 201, 13) solid 1px; */
+  border: white  solid 1px;
   
 }
 
@@ -191,7 +194,8 @@ body {
 }
 .game-info-style {
   background-color: #1A237E;
-  border: solid gold 1px;
+  /* border: solid gold 1px; */
+  border: solid white 1px;
   margin: 0px;
   padding: 0px;
   background-image: url("./images/hdwall1.jpg");
