@@ -108,7 +108,7 @@ $(document).ready(function() {
 		var top = $('#triggerspaceship')[0].style.top;
 
 		//creating the alien <img> and positioning based on the spaceship clicked poistion//
-		var redAlien = $('<img id="red-alien"src="practice-project1/assets/img/red-alien.png" alt="red alien">');
+		var redAlien = $('<img id="red-alien"src="assets/sounds/alienvoice.mp3" alt="red alien">');
 		redAlien.css('left', left);
 		redAlien.css('top', top);
 
@@ -120,11 +120,11 @@ $(document).ready(function() {
 
 		//alien voice and delay//
 		let redAlienAudio = $('<Audio></Audio>');
-		redAlienAudio[0].src = 'practice-project1/assets/sounds/alienvoice.mp3';
+		redAlienAudio[0].src = 'assets/sounds/alienvoice.mp3';
 		redAlienAudio[0].play();
 
 		var redShip = $(
-			'<img id="redspaceship"src="practice-project1/assets/img/redspaceship.png" alt="red spaceship" style = "left:800px; top:550px" > '
+			'<img id="redspaceship"src="assetssounds\redspaceshipclip.mp3" alt="red spaceship" style = "left:800px; top:550px" > '
 		);
 		//drop the alien to the ground
 		$('#red-alien').animate(

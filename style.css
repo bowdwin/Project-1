@@ -91,7 +91,7 @@ nav {
 	width: 200%;
 	height: 100%;
 	animation: spin 30s linear alternate-reverse infinite;
-	background: url(practice-project1/assets/img/neptune.jpg);
+	background: url(assets/img/neptune.jpg);
 	background-size: cover;
 }
 
