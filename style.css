@@ -6,7 +6,7 @@
 }
 
 nav {
-	background-color: transparent !important;
+	/* background-color: transparent !important; */
 	margin-bottom: 50px;
 }
 
@@ -213,4 +213,12 @@ p {
 	95% {
 		transform: translateX(10vw) translateY(100vh) rotateZ(0deg);
 	}
+}
+
+a.brand-logo {
+	font-family: sans-serif;
+}
+
+body:hover {
+	cursor: url('assets/img/Saturnicon.png'), auto;
 }

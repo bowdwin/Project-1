@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
 	//initial background color is black then user answers question and goes to starry background
+	$('.sidenav').sidenav();
 
 	var width = $('.container').width();
 
