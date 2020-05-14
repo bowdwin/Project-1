@@ -18,7 +18,7 @@ function displayPicOfDay() {
     var title = response.title;
     var titleEl = $("<h2>").text(`${title}`);
     var picOfDay = response.hdurl;
-    var picOfDayImg = $("<img>").attr("src", picOfDay);
+    var picOfDayImg = $("<img class='responsive-img'>").attr("src", picOfDay);
 
     photoDiv.append(
       titleEl,
@@ -32,3 +32,8 @@ function displayPicOfDay() {
   });
 }
 displayPicOfDay();
+
+$(document).ready(function () {
+  $(".dropdown-trigger").dropdown();
+  $(".sidenav").sidenav();
+});
