@@ -13,37 +13,26 @@
   </head>
 
   <body>
-    <!-- Navegation bar -->
-    <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#!">one</a></li>
-      <li><a href="#!">two</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">three</a></li>
-    </ul>
+    <!--navbar-->
     <nav>
-      <div class="nav-wrapper nav-background">
-        <a href="#!" class="brand-logo">Professor Planet</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
-        >
+      <div class="nav-wrapper indigo darken-4" id="navbar"><img id="logo"src="assets/imgs/profplanetlogo.png">
+        <a href="../index.html" class="brand-logo">Professor Planet</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Home</a></li>
-          <li><a href="badges.html">Card Game</a></li>
-          <!-- Dropdown Trigger -->
-          <li>
-            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
-              >Dropdown<i class="material-icons right">arrow_drop_down</i></a
-            >
-          </li>
+          <li><a href="../planetInfo/planetinfo.html">Solar System</a></li>
+          <li><a href="../picofday/picofday.html">Nasa Daily Image</a></li>
+          <li><a href="../cardgame/cardgame.html">Card Matching Game</a></li>
         </ul>
       </div>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="#">Sass</a></li>
-      <li><a href="#">Components</a></li>
-      <li><a href="#">Javascript</a></li>
-      <li><a href="#">Mobile</a></li>
-    </ul>
+
+     <ul class="sidenav" id="mobile-demo">
+      <li><a class="text"  href="../planetInfo/planetinfo.html">Solar System</a></li>
+      <li><a class="text"  href="../picofday/picofday.html">Nasa Daily Image</a></li>
+      <li><a class="text"  href="../cardgame/cardgame.html">Card Matching Game</a></li>
+    </ul> 
+
+
     <!-- end of navbar -->
     <div id="calendar" class="center">
       <h1 class="text-astro">Astronomical Events Calendar</h1>
