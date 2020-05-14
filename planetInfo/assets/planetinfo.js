@@ -272,7 +272,7 @@ $(document).ready(function () {
     function cardFlipSound() {
         var cardFlipSound = new Audio("./assets/sound/swoosh.wav");
         cardFlipSound.volume = .02;
-        cardFlipSound.play();
+
     }
     $(".flip-container").hover(function () {
         cardFlipSound();
