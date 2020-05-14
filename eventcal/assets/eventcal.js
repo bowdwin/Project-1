@@ -3,7 +3,7 @@ $(document).ready(function () {
   $(".sidenav").sidenav();
 });
 
-<script>
+/* <script>
 var frame = document.getElementById('myFrame');
     frame.onload = function () {
         var body = frame.contentWindow.document.querySelector('body');
@@ -11,4 +11,4 @@ var frame = document.getElementById('myFrame');
         body.style.fontSize = '20px';
         body.style.lineHeight = '20px';
     };
-</script>
+</script> */
