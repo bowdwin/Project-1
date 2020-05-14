@@ -36,6 +36,10 @@ $(document).ready(function() {
 			$('#intro').remove();
 		}, 500);
 
+		//materialize modal function//
+		$('.modal').modal();
+		$('#modal1').modal('open');
+
 		//Planets fade in and out
 		$('#earth').fadeIn(6000).removeClass('hide');
 		$('#mars').fadeIn(10000).removeClass('hide');
