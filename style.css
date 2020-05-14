@@ -41,7 +41,7 @@ nav {
 	width: 200%;
 	height: 100%;
 	animation: spin 40s linear alternate infinite;
-	background: url(practice-project1/assets/img/earthmap.jpg);
+	background: url(assets/img/earthmap.jpg);
 	background-size: cover;
 }
 
@@ -49,7 +49,7 @@ nav {
 	width: 200%;
 	height: 100%;
 	animation: spin 40s linear alternate infinite;
-	background: url(practice-project1/assets/img/mars.jpg);
+	background: url(assets/img/mars.jpg);
 	background-size: cover;
 }
 
@@ -70,7 +70,7 @@ nav {
 	width: 200%;
 	height: 100%;
 	animation: spin 40s linear alternate-reverse infinite;
-	background: url(practice-project1/assets/img/venusmap.jpg);
+	background: url(assets/img/venusmap.jpg);
 	background-size: cover;
 }
 
