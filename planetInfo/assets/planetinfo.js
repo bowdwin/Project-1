@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $(".dropdown-trigger").dropdown();
     $(".sidenav").sidenav();
-    // var queryURL = 'https://cors-anywhere.herokuapp.com/https://dry-plains-91502.herokuapp.com/planets';
+    var queryURL = 'https://cors-anywhere.herokuapp.com/https://dry-plains-91502.herokuapp.com/planets';
 
     $.ajax({
         url: queryURL,
