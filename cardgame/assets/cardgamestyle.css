@@ -57,7 +57,7 @@ src: url(./assets/fonts/starburst/Starburst.ttf);
 } 
 
 .matches-flips {
-  text-align: right;
+  text-align: left;
   font-size: 20px;
   /* padding-left: ; */
 }
