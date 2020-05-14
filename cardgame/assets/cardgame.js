@@ -189,7 +189,7 @@ $(document).ready(function () {
 
     function gameSound() {
         var gameSound = new Audio("./assets/sounds/pagesound.mp3");
-        gameSound.volume = .5;
+        gameSound.volume = .1;
         gameSound.play();
     }
 
