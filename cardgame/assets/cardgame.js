@@ -1,8 +1,12 @@
 //queary selector for every card clicked and store in aCardSel
 // gameSound();
 $(document).ready(function () {
-    // gameSound();
-    gameSound();
+
+    //nav bar for mobile view js
+    $(".dropdown-trigger").dropdown();
+    $(".sidenav").sidenav();
+
+
     var cardFlipSound = false;
     var aCardSel = $('.aCard');
     var restartButEl = $('#restartbtn');
@@ -185,7 +189,7 @@ $(document).ready(function () {
 
     function gameSound() {
         var gameSound = new Audio("./assets/sounds/pagesound.mp3");
-        gameSound.volume = .5;
+        gameSound.volume = .1;
         gameSound.play();
     }
 

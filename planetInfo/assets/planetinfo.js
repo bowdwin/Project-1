@@ -264,4 +264,20 @@ $(document).ready(function () {
     // use .html to set content 
     $("#sunCard").html(sunDiv);
 
+    // function backGroundMusic() {
+    //     var backGroundMusic = new Audio("./sounds/spacesound.mp3");
+    //     backGroundMusic.volume = .1;
+    //     backGroundMusic.play();
+    // }
+    function cardFlipSound() {
+        var cardFlipSound = new Audio("./assets/sound/swoosh.wav");
+        cardFlipSound.volume = .02;
+        cardFlipSound.play();
+    }
+    $(".flip-container").hover(function () {
+        cardFlipSound();
+    });
+    // function(){
+    //     nav_audio.load(););
+
 });
