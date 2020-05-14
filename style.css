@@ -1,12 +1,15 @@
 /*planet creation used and edited from: https://www.youtube.com/watch?v=9HXpirUu_H4 */
 /* I have created 2 more planets changed their sizes, positions, changed speed, removed code from original code.*/
-
+/* @font-face {
+	font-family: "starcraft";
+	src: url(./font/starcraft/starcraft1.ttf); */
+/* } */
 .section {
 	background: rgba(76, 175, 80, 0.1);
 }
 
 nav {
-	/* background-color: transparent !important; */
+	background-color: transparent !important;
 	margin-bottom: 50px;
 }
 
