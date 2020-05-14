@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "starcraft";
+  src: url(./font/starcraft/starcraft1.ttf);
+}
+
 body {
   background-image: url("./imgs/background.jpg");
   background-size: cover !important;
@@ -5,6 +10,9 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  color: white;
+  font-family: starcraft;
+  background-color: black;
 }
 
 #calendar {
@@ -16,10 +24,5 @@ body {
 .text-astro {
   text-align: center;
   text-emphasis: underline;
-  font-family: fantasy;
-  background-color: floralwhite;
-}
-
-p {
-  background-color: ghostwhite;
+  font-family: starcraft, sans-serif;
 }
