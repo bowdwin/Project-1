@@ -1,35 +1,63 @@
 @font-face {
-  font-family: "starcraft";
-  src: url(./fonts/starcraft1.ttf);
+	font-family: "starcraft";
+	src: url(./fonts/starcraft1.ttf);
 }
 
 body {
-  color: white;
-  font-family: starcraft;
-  background-color: black;
-  background-image: url("./imgs/backgroundm.jpg");
-  background-size: cover !important;
-  min-height: 100vh;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+	color: white;
+	font-family: starcraft;
+	background-color: black;
+	background-image: url("./imgs/backgroundm.jpg");
+	background-size: cover !important;
+	min-height: 100vh;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: xx-large;
-  text-align: center;
-  background-color: cornflowerblue;
-}
-
-h2 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: xx-large;
+	text-align: center;
+	background-color: cornflowerblue;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  border: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 2px;
 }
 
 img {
-  flex: auto;
+	flex: auto;
+}
+h2 {
+	margin-top: 70px;
+}
+#logo {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.sidenav {
+	background: #1a237e;
+}
+.text {
+	color: white !important;
+}
+
+@media only screen and (max-width: 1100px) {
+	a.brand-logo {
+		font-size: 20px !important;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	a.brand-logo {
+		font-size: 10px !important;
+	}
+	#logo {
+		margin-left: 140px;
+		height: 30px;
+	}
 }
