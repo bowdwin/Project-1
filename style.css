@@ -10,6 +10,30 @@ nav {
 	margin-bottom: 50px;
 }
 
+/*modal*/
+.scientistimg {
+	width: 200px;
+	margin-left: 55px;
+}
+
+#agreetxt {
+	color: white;
+}
+
+h4 {
+	text-decoration: underline;
+	text-align: center;
+}
+.modal-content {
+	font-family: sans-serif;
+	color: white;
+	background: url("https://cdn.arstechnica.net/wp-content/uploads/2020/05/blackholeTOP-800x533.jpg");
+	background-size: cover;
+	border-style: solid;
+	border-width: 10px;
+	border-color: black;
+}
+
 .earth,
 .mars {
 	width: 125px;
@@ -219,6 +243,10 @@ a.brand-logo {
 	font-family: sans-serif;
 }
 
-body:hover {
+.saturn:hover {
+	cursor: url('assets/img/Saturnicon.png'), auto;
+}
+
+body {
 	cursor: url('assets/img/Saturnicon.png'), auto;
 }
