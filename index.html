@@ -13,26 +13,35 @@
 <body>
   <!-- plays background song-->
    <audio id="audiolvl" loop="loop" autoplay="autoplay">
-    <source src="practice-project1/assets/sounds/discovery.mp3" type="audio/mpeg">
+    <source src="assets/sounds/discovery.mp3" type="audio/mpeg">
     </audio>
 
     <audio id="audiospaceship" loop="loop">
-      <source src="practice-project1/assets/sounds/spaceship.mp3" type="audio/mpeg">
+      <source src="assets/sounds/spaceship.mp3" type="audio/mpeg">
       </audio>
 
-    <audio id="redspaceship"><source src="practice-project1/assets/sounds/redspaceshipclip.mp3" type="audio/mpeg"></audio>
+    <audio id="redspaceship"><source src="assets/sounds/redspaceshipclip.mp3" type="audio/mpeg"></audio>
 
     <!--asteroid-->
-      <div class="asteroid"><img src="practice-project1/assets/img/asteroid.png"></div>
+      <div class="asteroid"><img src="assets/img/asteroid.png"></div>
 
-  <nav class="hide" id="navbarfade">
+  <nav class="" id="navbarfade">
     <div class="nav-wrapper">
       <a href="index.html" class="brand-logo center">Professor Planet</a>
+      <a href="index.html" class="brand-logo center">Professor Planet</a>
+      <li><a href="eventcal/eventcal.html"></a>Astronomical Events</li>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
        
       </ul>
     </div>
-  </nav>
+    </nav>
+  
+  <ul class="sidenav" id="mobile-links">
+    <li><a href="eventcal/eventcal.html"></a>NASA Daily Image</li>
+    <li><a href="eventcal/eventcal.html"></a>Astronomical Events</li>
+    <li><a href="planetInfo/planetinfo.html"></a>Solar System</li>
+</ul>
+<
 
  <div class="container valign-wrapper">
 
@@ -59,7 +68,7 @@
    <div class="row valign-wrapper">
 
        <div class="col s3 l4 hide"  id = "earth">
-          <p id="centersolar"> About the Solar System</p>     
+          <p id="centersolar">Solar System</p>     
           <a href="#" >
            <div class="earth">
               <div ></div>
@@ -83,7 +92,7 @@
     <div class="row">
 
       <div class="col s3 l4 hide" id = "mars">
-        <p id="events">Astronomical Event</p>
+        <p id="events">Astronomical Events</p>
           <a href="#">
             <div class="mars">
                 <div> </div>
@@ -93,7 +102,7 @@
 
       <div class="col s3 l4 hide" id= "neptune">
 
-          <p id="match">Match the planets</p>
+          <p id="match">Match Planets</p>
           <a href="#">
             <div  class="neptune">
               <div></div>
@@ -105,7 +114,7 @@
   <div class="row">
 
       <div class="col s10 spaceship hide">
-        <a id="triggerspaceship" href="#"><img id="explodeship" src="practice-project1/assets/img/alienship.png" alt="spaceship"></a>
+        <a id="triggerspaceship" href="#"><img id="explodeship" src="assets/img/alienship.png" alt="spaceship"></a>
       </div>
 
   </div>
@@ -130,7 +139,7 @@
     <!--materialize js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--plugin for explosion effects-->
-    <script src="practice-project1/assets/imgexplode.js/dist/jquery.imgexplode.min.js"></script>
+    <script src="assets/imgexplode.js/dist/jquery.imgexplode.min.js"></script>
     
     <script src="script.js"></script>
             

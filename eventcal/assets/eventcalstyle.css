@@ -1,0 +1,50 @@
+/* @media only screen and (max-width: 601px) {
+  .nav-background {
+    width: 601px;
+  }
+  body {
+    width: 600px;
+  }
+}
+@media only screen and (min-width: 602px) {
+  .container {
+  
+    margin-left: 25%;
+  }
+} */
+
+@font-face {
+  font-family: "starcraft";
+  src: url(./font/starcraft/starcraft1.ttf);
+}
+
+body {
+  background-image: url("./imgs/background.jpg");
+  background-size: cover !important;
+  min-height: 100vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: starcraft;
+  background-color: black;
+}
+
+#calendar {
+  margin: 25px;
+  padding: 10px;
+  justify-self: start;
+}
+
+.text-astro {
+  text-align: center;
+  text-emphasis: underline;
+  font-family: starcraft, sans-serif;
+}
+a.brand-logo {
+  padding-left: 10px;
+}
+
+body:hover {
+  cursor: url("./imgs/Saturn-icon.png"), auto !important;
+}
