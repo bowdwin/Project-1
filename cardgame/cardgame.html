@@ -13,6 +13,23 @@
 </head>
 
 <body class="body">
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-style">
+        <div class="modal-content">
+            <h4>Match The Planets!</h4>
+            <p>Welcome to Match The Planets!</p>
+            <p>In this game, you will flip <br>two cards over and try and <br>
+                match the planets. The scoreboard <br>will track how many clicks and <br>how many
+                matches.</p>
+        </div>
+        <a href="#!" class="modal-close waves-effect waves-red btn style-modal-btn">Start Matching!</a>
+        <!-- <div class="modal-footer"> -->
+
+        <!-- </div> -->
+    </div>
+
     <nav>
         <div class="nav-wrapper">
             <img src="./assets/images/profplanet.png" alt=""
@@ -48,7 +65,10 @@
                 <p class="matches-flips flips-element"><span id="flips">0</span> </p>
             </div>
             <div class="col s3 m4 l3 game-info" id="mathes">
-                <a class="waves-effect waves-light btn-small" id="restartbtn">Restart</a>
+                <a class="waves-effect waves-light btn-small btn-hoover-style" id="restartbtn">Restart</a>
+                <!-- <button data-target="modal1" class="btn modal-trigger">Modal</button> -->
+                <a class="waves-effect waves-light btn-small btn modal-trigger btn-hoover-style" data-target="modal1"
+                    id="modal-btn" style="margin-top: 25px;">Instructions</a>
             </div>
         </div>
         <div class="container game-container">
