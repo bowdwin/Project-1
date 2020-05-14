@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
 	//initial background color is black then user answers question and goes to starry background
+	$('.sidenav').sidenav();
 
 	var width = $('.container').width();
 
@@ -24,7 +25,7 @@ $(document).ready(function() {
 	////-------ANIMATION BUTTON------//
 	$('#button1').on('click', function(event) {
 		$('.container').removeClass('valign-wrapper');
-		let imageUrl = 'practice-project1/assets/img/stars.jpg';
+		let imageUrl = 'assets/img/stars.jpg';
 		$('body').css('background', 'url(' + imageUrl + ')');
 		$('body').css('background-size', 'cover');
 		$('body').css('background-position', 'bottom');
@@ -54,7 +55,7 @@ $(document).ready(function() {
 
 	//-------NO ANIMATION BUTTON------//
 	$('#button2').on('click', function(event) {
-		let imageUrl = 'practice-project1/assets/img/stars.jpg';
+		let imageUrl = 'assets/img/stars.jpg';
 		$('body').css('background', 'url(' + imageUrl + ')');
 		$('body').css('background-size', 'cover');
 		$('body').css('background-position', 'bottom');
@@ -78,7 +79,7 @@ $(document).ready(function() {
 	$('#triggerspaceship').on('click', function(event) {
 		//play the exlosion
 		let explosionAudio = $('<Audio></Audio>');
-		explosionAudio[0].src = 'practice-project1/assets/sounds/explosion.wav';
+		explosionAudio[0].src = 'assets/sounds/explosion.wav';
 		explosionAudio[0].play();
 		//stop audio for spaceship engine//
 		$('#audiospaceship')[0].pause();
@@ -108,7 +109,7 @@ $(document).ready(function() {
 		var top = $('#triggerspaceship')[0].style.top;
 
 		//creating the alien <img> and positioning based on the spaceship clicked poistion//
-		var redAlien = $('<img id="red-alien"src="practice-project1/assets/img/red-alien.png" alt="red alien">');
+		var redAlien = $('<img id="red-alien"src="assets/img/red-alien.png" alt="red alien">');
 		redAlien.css('left', left);
 		redAlien.css('top', top);
 
@@ -120,11 +121,11 @@ $(document).ready(function() {
 
 		//alien voice and delay//
 		let redAlienAudio = $('<Audio></Audio>');
-		redAlienAudio[0].src = 'practice-project1/assets/sounds/alienvoice.mp3';
+		redAlienAudio[0].src = 'assets/sounds/alienvoice.mp3';
 		redAlienAudio[0].play();
 
 		var redShip = $(
-			'<img id="redspaceship"src="practice-project1/assets/img/redspaceship.png" alt="red spaceship" style = "left:800px; top:550px" > '
+			'<img id="redspaceship"src="assets/img/redspaceship.png" alt="red spaceship" style = "left:800px; top:550px" > '
 		);
 		//drop the alien to the ground
 		$('#red-alien').animate(
