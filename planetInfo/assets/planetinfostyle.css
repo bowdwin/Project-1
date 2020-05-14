@@ -1,10 +1,10 @@
 @font-face {
     font-family: "starcraft";
-    src: url(/planetInfo/assets/font/starcraft.ttf);
+    src: url(./planetInfo/assets/font/starcraft.ttf);
     }
 
 HTML, body {
-background-image: url(/planetInfo/assets/images/background.jpg);
+background-image: url(./planetInfo/assets/images/background.jpg);
 background-size: cover !important;
 min-height: 100vh;
 background-size: contain;
@@ -45,6 +45,7 @@ h1{
     border-radius: 15px;
     border: transparent;
     box-shadow: none!important;
+    padding: 10px;
     /* text-align: center; */
 }
 
