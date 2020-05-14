@@ -21,14 +21,14 @@
       <li><a href="#!">three</a></li>
     </ul>
     <nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-links" class="sidenav-trigger"
+      <div class="nav-wrapper nav-background">
+        <a href="#!" class="brand-logo">Professor Planet</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
         >
         <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
+          <li><a href="sass.html">Home</a></li>
+          <li><a href="badges.html">Card Game</a></li>
           <!-- Dropdown Trigger -->
           <li>
             <a class="dropdown-trigger" href="#!" data-target="dropdown1"
@@ -38,7 +38,7 @@
         </ul>
       </div>
     </nav>
-    <ul class="sidenav" id="mobile-links">
+    <ul class="sidenav" id="mobile-demo">
       <li><a href="#">Sass</a></li>
       <li><a href="#">Components</a></li>
       <li><a href="#">Javascript</a></li>
@@ -48,12 +48,15 @@
     <div id="calendar" class="center">
       <h1 class="text-astro">Astronomical Events Calendar</h1>
       <h3 id="month"></h3>
-      <iframe
-        allowtransparency="yes"
-        scrolling="no"
-        style="border: none; width: 860px; height: 759px; overflow: hidden;"
-        src="https://in-the-sky.org/widgets/newscal.php?skin=0"
-      ></iframe>
+      <div class="container saturn-img" style="background-color: #0d47a1;">
+        <iframe
+          id="myFrame"
+          allowtransparency="yes"
+          scrolling="no"
+          style="border: none; width: 860px; height: 759px; overflow: hidden;"
+          src="https://in-the-sky.org/widgets/newscal.php?skin=1"
+        ></iframe>
+      </div>
     </div>
 
     <!-- Compiled and minified JavaScript -->
