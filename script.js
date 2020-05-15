@@ -4,12 +4,17 @@ $(document).ready(function() {
 	//ACTIVATE THE SIDE NAV FOR MOBILE MODE//
 	$('.sidenav').sidenav();
 
-	// FADE IN BACKGROUND MUSIC//
-	$('#audiolvl')[0].volume = 0;
-	$('#audiolvl').animate({ volume: 0.2 }, 4000);
+	var isMobile = window.matchMedia('(max-width: 767px)');
 
-	//INITIAL BACKGROUND COLOR IS BLACK FOR ANIMATION QUESTIONS
-	$('body').css('background-color', 'black');
+	if (isMobile.matches) {
+		disableAnimation();
+	} else {
+		//INITIAL BACKGROUND COLOR IS BLACK FOR ANIMATION QUESTIONS
+		// FADE IN BACKGROUND MUSIC//
+		$('#audiolvl')[0].volume = 0;
+		$('#audiolvl').animate({ volume: 0.2 }, 4000);
+		$('body').css('background-color', 'black');
+	}
 
 	//FADE IN THE QUESTION INRO//
 	$('#intro').fadeIn(4000).removeClass('hide');
@@ -45,15 +50,7 @@ $(document).ready(function() {
 	//-------NO ANIMATION BUTTON------//
 	$('#button2').on('click', function(event) {
 		//calltranition to abckgorund fucntion
-		transitionToStarryBackground();
-
-		setTimeout(function() {
-			$('#intro').remove();
-			$('.container').removeClass('valign-wrapper');
-		}, 500);
-
-		//Planets fade in//
-		fadeInPlanets();
+		disableAnimation();
 	});
 
 	//explode when click blue alien ship
@@ -163,6 +160,18 @@ $(document).ready(function() {
 			ignoreCompelete: false,
 			land: true
 		});
+	}
+
+	function disableAnimation() {
+		transitionToStarryBackground();
+
+		setTimeout(function() {
+			$('#intro').remove();
+			$('.container').removeClass('valign-wrapper');
+		}, 500);
+
+		//Planets fade in//
+		fadeInPlanets();
 	}
 
 	//bluespaceship movement//

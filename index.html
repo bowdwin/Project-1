@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Professor Planet</title>
     <!-- <link rel="stylesheet" href="new.css"> -->
     <link rel="stylesheet" href="style.css">
      <!-- Compiled and minified CSS -->
@@ -28,7 +28,8 @@
   <!--navbar-->
   <nav class="hide" id="navbarfade">
     <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo center">Professor&nbsp;Planet</a>
+      <!--&nbsp; creates a space between two words so that materialize does not push the second text out of the box-->
+      <a href="index.html" class="brand-logo center" id="navbarlogo">Professor&nbsp;Planet</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
       </ul>
     </div>
@@ -48,7 +49,7 @@
   <div class="modal-content">
     <h4>How to Play</h4>
     <img class="scientistimg center responsive-img" src="assets/img/scientist.png">
-    <h4>Professor Planet is at it again!</h4>
+    <h5>Professor Planet is at it again!</h5>
       <p>
       Professor planet has captured an alien!
       He intends to perform experiments on the extraterrestrial and never let it return home.
@@ -63,32 +64,47 @@
   </div>
 </div>
 
+<div class="row hide" id="intro">
+
+  <div class="col s12 l10 offset-l6">   
+    <h1 class="welcometext">Click To Enter:</h1>
+  </div>
+
+  <div class="col s6 l3 offset-l6">
+      <a id="button1"class="waves-effect waves-blue btn-large purple darken-3 pulse"><i class="material-icons left"></i>Animation</a>
+  </div>
+<!--&nbsp; creates a space between two words so that materialize does not push the second text out of the box-->
+  <div class="col s6 l3">
+    <a id="button2"class="waves-effect waves-blue btn-large purple darken-3 pulse"><i class="material-icons left"></i>No&nbsp;Animation</a>
+  </div>
+
+</div>
  <div class="container valign-wrapper">
 
 
 
-<div class="row hide" id="intro">
+<!-- <div class="row hide" id="intro">
 
-  <div class="col l12 offset-l6">   
+  <div class="col l10 offset-l5">   
     <h1 class="welcometext"> To Enter Click:</h1>
   </div>
 
-  <div class="col l3 offset-l6">
+  <div class="col s1 l3 offset-l6">
       <a id="button1"class="waves-effect waves-blue btn-large purple darken-3 pulse"><i class="material-icons left"></i>Animation</a>
   </div>
-
-  <div class="col l3">
-    <a id="button2"class="waves-effect waves-blue btn-large purple darken-3 pulse"><i class="material-icons left"></i>No Animation</a>
+<!&nbsp; creates a space between two words so that materialize does not push the second text out of the box-->
+  <!-- <div class="col s1 l3">
+    <a id="button2"class="waves-effect waves-blue btn-large purple darken-3 pulse"><i class="material-icons left"></i>No&nbsp;Animation</a>
   </div>
 
-</div>
+</div> -->
 
 
 
    <div class="row valign-wrapper">
 
-       <div class="col s3 l4 hide"  id = "earth">
-          <p id="centersolar">Solar System</p>     
+       <div class="col s1 pull-s4 l4 hide"  id = "earth">
+          <p class="smallscreen" id="centersolar">Solar System</p>     
           <a href="planetInfo/planetinfo.html" >
            <div class="earth saturn">
               <div ></div>
@@ -98,8 +114,8 @@
       </div> 
 
       <!-- <div class="col"><p>Venus</p></div> -->
-      <div class="col s3 l4 pull-l1 hide" id= "venus">
-        <p>NASA Daily Image</p>
+      <div class="col s3 pull-s3 l4 pull-l1 hide" id= "venus">
+        <p class="nasaspecial" id="nasa">NASA Daily Image</p>
           <a href="picofday/picofday.html">
             <div class="venus saturn">
               <div></div>
@@ -112,7 +128,7 @@
     <div class="row">
 
       <div class="col s3 l4 hide" id = "mars">
-        <p id="events">Astrology Events</p>
+        <p class="smallscreen" id="events">Astronomical Events</p>
           <a href="eventcal/eventcal.html">
             <div class="mars saturn">
                 <div> </div>
@@ -120,9 +136,9 @@
           </a>
       </div>
 
-      <div class="col s3 l4 hide" id= "neptune">
+      <div class="col s3 push-s4 l4 hide" id= "neptune">
 
-          <p id="match">Card Matching Game</p>
+          <p class="screensize2" id="match">Card Matching Game</p>
           <a href="cardgame/cardgame.html">
             <div  class="neptune saturn">
               <div></div>
