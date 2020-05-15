@@ -69,12 +69,7 @@ src: url(./assets/fonts/starburst/Starburst.ttf);
     padding-bottom: 5px;
 }
 .nav-wrapper{
-/* background-color: rgb(79, 9, 82) !important; */
 background-color: #1A237E !important;
-
-/* background-size: contain;
-background-position: center;
-background-repeat: no-repeat; */
 }
 .side-nav{
   background-color: #1A237E !important;
@@ -88,24 +83,13 @@ background-color: black;
 
 .header-align {
     text-align: center;
-    /* font-size: 5rem; */
-    /* color: rgb(241, 188, 72); */
     color:white;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    /* width: 100%;
-    height: auto; */
 }
-/* .card-image-back {
-    height: auto;
-    width: auto;
-} */
-/* .card-row {
-    padding-left: 20px;
-    padding-right: 20px;
-} */
+
 body {
     background-image: url("./images/hdwall1.jpg");
     background-size: cover !important;
@@ -131,9 +115,9 @@ body {
     margin: auto;
     display: flex;
    flex-wrap: wrap; 
-    /* perspective: px; */
+
   }
-  
+   /* https://stackoverflow.com/questions/26923336/how-to-create-card-hover-style-effect-like-google-now-cards */
   .aCard:hover {
     -webkit-animation: anim ease-out 0.5s 1;
     animation: anim 0.5s 1;
@@ -141,17 +125,11 @@ body {
     cursor: url('./images/Saturn-icon.png'), auto;
     box-sizing: content-box 10px;
     box-shadow: 0 30px 30px white;
-    /* box-shadow: 50px white; */
-    /* box-shadow: 10px white; */
     opacity: 1;
-    /* border: black 2px solid; */
     position: relative;
-    /* transform: translateY(1px); */
     transform: scale(1.1);
-   
-      
   }
-  /* https://stackoverflow.com/questions/26923336/how-to-create-card-hover-style-effect-like-google-now-cards */
+ 
 
 
 .aCard {
@@ -207,7 +185,7 @@ body {
   /* font-size: 5px; */
 }
 .matches-border{
-border-right: none;
+/* border-right: none; */
 }
 .flip-border{
 border-left: none;  
