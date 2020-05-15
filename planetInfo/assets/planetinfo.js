@@ -246,7 +246,7 @@ $(document).ready(function () {
     // *************** empty content from sun id so that new info can be populated***************  
     $("#sunCard").empty();
 
-    // ***************Create elements for pulling info from moon index***************
+    // ***************Create elements for sun card***************
     var sunGalOb = $("<p>").text("Orbiting Galaxy: " + "Milky Way");
     var sunType = $("<p>").text("Type: " + "Yellow Dwarf(G2V)");
     var sunDiameter = $("<p>").text("Diameter: " + "1,392,684" + " km");
@@ -258,26 +258,19 @@ $(document).ready(function () {
     var sunPlanets = $("<p>").text("Number of Orbiting Planets: " + "8");
     var sunTemp = $("<p>").text("Mean Temp: " + "5,500" + " °C");
 
-    // create new moon div to append p tags
+    // create new sun div to append p tags
     var sunDiv = $("<div>");
     sunDiv.append(sunGalOb, sunType, sunDiameter, sunMass, sunDensity, sunGrav, sunRotation, sunOb, sunPlanets, sunTemp);
     // use .html to set content 
     $("#sunCard").html(sunDiv);
+});
 
-    // function backGroundMusic() {
-    //     var backGroundMusic = new Audio("./sounds/spacesound.mp3");
-    //     backGroundMusic.volume = .1;
-    //     backGroundMusic.play();
-    // }
-    function cardFlipSound() {
-        var cardFlipSound = new Audio("./assets/sound/swoosh.wav");
-        cardFlipSound.volume = .02;
+function cardFlipSound() {
+    var cardFlipSound = new Audio("./assets/sound/swoosh.wav");
+    cardFlipSound.volume = .02;
+    cardFlipSound.play();
 
-    }
-    $(".flip-container").hover(function () {
-        cardFlipSound();
-    });
-    // function(){
-    //     nav_audio.load(););
-
+}
+$(".flip-container").hover(function () {
+    cardFlipSound();
 });
