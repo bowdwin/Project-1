@@ -30,7 +30,13 @@
     margin-left: 25%;
   }
 }
-
+.sidenav {
+  background: #1a237e;
+  color:white;
+}
+li{ 
+  color: white !important;
+}
 
 @font-face {
     font-family: "aspace-font";
@@ -106,15 +112,14 @@ body {
     min-height: 100vh;
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     margin-bottom: 250px;
 
     
   }
 
-  .game-container {
-    /* margin-left: 20%; */
-    
+  .text {
+    color: white !important;
   }
   .matches-flips {
     text-align: center;
@@ -207,3 +212,24 @@ border-right: none;
 .flip-border{
 border-left: none;  
 }
+.modal-style{
+  background-image: url("./images/matches-flips.jpg");
+    background-size: cover !important;
+    /* min-height: 100vh; */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.style-modal-btn{
+  margin: 8px;
+  background-color: #1A237E;
+  color: white;
+  border: white solid 1px;
+}
+.style-modal-btn:hover{
+  background-color: rgb(44, 58, 211);
+}
+.btn-hoover-style:hover{
+  background-color: rgb(44, 58, 211);
+}
+
