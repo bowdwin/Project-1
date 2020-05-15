@@ -30,7 +30,13 @@
     margin-left: 25%;
   }
 }
-
+.sidenav {
+  background: #1a237e;
+  color:white;
+}
+li{ 
+  color: white !important;
+}
 
 @font-face {
     font-family: "aspace-font";
@@ -112,9 +118,8 @@ body {
     
   }
 
-  .game-container {
-    /* margin-left: 20%; */
-    
+  .text {
+    color: white !important;
   }
   .matches-flips {
     text-align: center;

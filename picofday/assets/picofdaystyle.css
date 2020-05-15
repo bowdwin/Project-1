@@ -3,6 +3,14 @@
 	src: url(./fonts/starcraft1.ttf);
 }
 
+
+@media only screen and (max-width: 601px) {
+	h2{
+	  font-size: 25px;
+	}
+	
+
+  }
 body {
 	color: white;
 	font-family: starcraft;
@@ -35,29 +43,27 @@ h2 {
 }
 #logo {
 	margin-top: 10px;
-	margin-left: 10px;
+	margin-left: -5px;
 	margin-right: 10px;
 }
 
 .sidenav {
 	background: #1a237e;
 }
+
 .text {
 	color: white !important;
 }
 
 @media only screen and (max-width: 1100px) {
 	a.brand-logo {
-		font-size: 20px !important;
+		font-size: 15px !important;
 	}
 }
-
+/* 
 @media only screen and (max-width: 1100px) {
 	a.brand-logo {
 		font-size: 10px !important;
 	}
-	#logo {
-		margin-left: 140px;
-		height: 30px;
-	}
-}
+	
+} */
