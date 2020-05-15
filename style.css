@@ -4,6 +4,14 @@
 	font-family: "starcraft";
 	src: url(./font/starcraft/starcraft1.ttf); */
 /* } */
+body {
+	font-family: "death-star" !important;
+}
+@font-face {
+	font-family: "death-star";
+	src: url(./assets/fonts/death-star/DeathStar.otf);
+}
+
 .section {
 	background: rgba(76, 175, 80, 0.1);
 }
@@ -28,6 +36,11 @@ nav {
 h4 {
 	text-decoration: underline;
 	text-align: center;
+	font-family: "death-star";
+}
+h5 {
+	text-align: center;
+	font-family: "death-star";
 }
 .modal-content {
 	font-family: sans-serif;
@@ -162,9 +175,11 @@ h1 {
 	color: white;
 }
 #intro {
-	margin-top: 20rem;
+	margin-top: 25%;
 	margin-right: 35%;
+	font-family: "death-star";
 }
+/* reduces the materialized canvas that cuts off the screen*/
 canvas {
 	height: 400px !important;
 	bottom: -200px !important;
@@ -176,15 +191,18 @@ p {
 }
 
 /*center the text above planets*/
-#match {
+#nasa {
 	margin-left: 120px;
+}
+#match {
+	margin-left: 105px;
 }
 
 #events {
-	margin-left: 115px;
+	margin-left: 95px;
 }
 #centersolar {
-	margin-left: 100px;
+	margin-left: 145px;
 }
 
 /* asteroid code cite source: https://support.cargo.site/Make-an-Image-Fly-Across-the-Screen */
@@ -263,6 +281,10 @@ body {
 	margin-right: 15px;
 }
 
+#navbarlogo {
+	font-family: "death-star";
+}
+
 .sidenav {
 	background: #1a237e;
 }
@@ -270,14 +292,14 @@ body {
 	color: white !important;
 }
 
-@media only screen and (max-width: 1100px) {
-	a.brand-logo {
-		font-size: 20px !important;
+@media only screen and (max-width: 992px) {
+	.smallscreen {
+		margin-left: 20px !important;
 	}
-}
-
-@media only screen and (max-width: 1100px) {
-	a.brand-logo {
-		font-size: 10px !important;
+	.screensize2 {
+		margin-left: 30px !important;
+	}
+	#nasa {
+		margin-left: 36px !important;
 	}
 }
