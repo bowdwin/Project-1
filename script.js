@@ -4,6 +4,7 @@ $(document).ready(function() {
 	//ACTIVATE THE SIDE NAV FOR MOBILE MODE//
 	$('.sidenav').sidenav();
 
+	//W3schools//
 	var isMobile = window.matchMedia('(max-width: 767px)');
 
 	if (isMobile.matches) {
@@ -32,8 +33,6 @@ $(document).ready(function() {
 		fadeInPlanets();
 
 		//position the blue spacehip on the botttom right of the container
-		// $('.spaceship').css('left', $('.container').width() + 'px');
-		// $('.spaceship').css('top', $('.container').height() + 'px');
 		$('.spaceship').css('left', $('body').width() - 400 + 'px');
 		$('.spaceship').css('top', $('body').height() - 400 + 'px');
 
@@ -53,7 +52,6 @@ $(document).ready(function() {
 	$('#button2').on('click', function(event) {
 		//transition to background function
 		disableAnimation();
-		// $('#audiolvl1')[0].volume = 0;
 	});
 
 	//explode when click blue alien ship
@@ -68,7 +66,7 @@ $(document).ready(function() {
 		var top = $('.spaceship')[0].style.top;
 
 		//creating the alien <img> and positioning based on the spaceship clicked poistion//
-		var redAlien = $('<img id="red-alien"src="assets/img/red-alien.png" alt="red alien">');
+		var redAlien = $('<img id="red-alien"src="/assets/img/red-alien.png" alt="red alien">');
 		redAlien.css('left', left);
 		redAlien.css('top', top);
 
@@ -80,11 +78,11 @@ $(document).ready(function() {
 
 		//alien voice and delay//
 		let redAlienAudio = $('<Audio></Audio>');
-		redAlienAudio[0].src = 'assets/sounds/alienvoice.mp3';
+		redAlienAudio[0].src = '/assets/sounds/alienvoice.mp3';
 		redAlienAudio[0].play();
 
 		//create the redship element
-		var redShip = $('<img id="redspaceship"src="/assets/img/redspaceship.png" alt="red spaceship"> ');
+		var redShip = $('<img id="redspaceship"src="/assets/img/redspaceship.png"> ');
 
 		//position the spaceship in the bottom middle of the container
 		redShip.css('left', $('.container').width() / 2);
@@ -175,6 +173,7 @@ $(document).ready(function() {
 
 		//Planets fade in//
 		fadeInPlanets();
+		$('#audiolvl1')[0].remove();
 	}
 
 	//bluespaceship movement//
