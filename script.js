@@ -33,8 +33,6 @@ $(document).ready(function() {
 		fadeInPlanets();
 
 		//position the blue spacehip on the botttom right of the container
-		// $('.spaceship').css('left', $('.container').width() + 'px');
-		// $('.spaceship').css('top', $('.container').height() + 'px');
 		$('.spaceship').css('left', $('body').width() - 400 + 'px');
 		$('.spaceship').css('top', $('body').height() - 400 + 'px');
 
@@ -54,7 +52,6 @@ $(document).ready(function() {
 	$('#button2').on('click', function(event) {
 		//transition to background function
 		disableAnimation();
-		$('#audiolvl1')[0].volume = 0;
 	});
 
 	//explode when click blue alien ship
@@ -176,6 +173,7 @@ $(document).ready(function() {
 
 		//Planets fade in//
 		fadeInPlanets();
+		$('#audiolvl1')[0].remove();
 	}
 
 	//bluespaceship movement//
