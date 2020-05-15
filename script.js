@@ -32,11 +32,13 @@ $(document).ready(function() {
 		fadeInPlanets();
 
 		//position the blue spacehip on the botttom right of the container
-		$('.spaceship').css('left', $('.container').width() + 'px');
-		$('.spaceship').css('top', $('.container').height() + 'px');
+		// $('.spaceship').css('left', $('.container').width() + 'px');
+		// $('.spaceship').css('top', $('.container').height() + 'px');
+		$('.spaceship').css('left', $('body').width() - 400 + 'px');
+		$('.spaceship').css('top', $('body').height() - 400 + 'px');
 
 		//unhide and fade in blue spacehip
-		$('.spaceship').fadeIn(6000).removeClass('hide');
+		$('.spaceship').fadeIn(2000).removeClass('hide');
 
 		//play engine sound of the blue space ship
 		$('#audiospaceship')[0].volume = 0;
@@ -49,8 +51,9 @@ $(document).ready(function() {
 
 	//-------NO ANIMATION BUTTON------//
 	$('#button2').on('click', function(event) {
-		//calltranition to abckgorund fucntion
+		//transition to background function
 		disableAnimation();
+		// $('#audiolvl1')[0].volume = 0;
 	});
 
 	//explode when click blue alien ship
@@ -92,7 +95,7 @@ $(document).ready(function() {
 			{
 				top: $('.container').height() + 50
 			},
-			1500,
+			2000,
 			function() {
 				$('.container').append(redShip);
 				$('#redspaceship')[0].play();
@@ -178,7 +181,7 @@ $(document).ready(function() {
 	function goRight() {
 		$('.spaceship').animate(
 			{
-				left: $('.container').width()
+				left: $('body').width() - 400
 			},
 			5000,
 			function() {
@@ -189,7 +192,7 @@ $(document).ready(function() {
 	function goLeft(x) {
 		$('.spaceship').animate(
 			{
-				left: 0
+				left: 100
 			},
 			5000,
 			function() {
@@ -201,7 +204,7 @@ $(document).ready(function() {
 	function goDown() {
 		$('.spaceship').animate(
 			{
-				top: $('.container').height()
+				top: $('body').height() - 400
 			},
 			5000,
 			function() {
@@ -212,7 +215,7 @@ $(document).ready(function() {
 	function goUp() {
 		$('.spaceship').animate(
 			{
-				top: 0
+				top: 100
 			},
 			5000,
 			function() {

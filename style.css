@@ -182,7 +182,6 @@ h1 {
 /* reduces the materialized canvas that cuts off the screen*/
 canvas {
 	height: 400px !important;
-	bottom: -200px !important;
 }
 p {
 	color: white;
