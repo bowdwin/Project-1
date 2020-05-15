@@ -66,7 +66,7 @@ $(document).ready(function() {
 		var top = $('.spaceship')[0].style.top;
 
 		//creating the alien <img> and positioning based on the spaceship clicked poistion//
-		var redAlien = $('<img id="red-alien"src="/assets/img/red-alien.png" alt="red alien">');
+		var redAlien = $('<img id="red-alien"src="assets/img/red-alien.png" alt="red alien">');
 		redAlien.css('left', left);
 		redAlien.css('top', top);
 
@@ -78,11 +78,11 @@ $(document).ready(function() {
 
 		//alien voice and delay//
 		let redAlienAudio = $('<Audio></Audio>');
-		redAlienAudio[0].src = '/assets/sounds/alienvoice.mp3';
+		redAlienAudio[0].src = 'assets/sounds/alienvoice.mp3';
 		redAlienAudio[0].play();
 
 		//create the redship element
-		var redShip = $('<img id="redspaceship"src="/assets/img/redspaceship.png"> ');
+		var redShip = $('<img id="redspaceship"src="assets/img/redspaceship.png"> ');
 
 		//position the spaceship in the bottom middle of the container
 		redShip.css('left', $('.container').width() / 2);
@@ -138,7 +138,7 @@ $(document).ready(function() {
 	//function to explode the ship
 	function triggerExplosion() {
 		let explosionAudio = $('<Audio></Audio>');
-		explosionAudio[0].src = '/assets/sounds/explosion.wav';
+		explosionAudio[0].src = 'assets/sounds/explosion.wav';
 		explosionAudio[0].play();
 		//stop audio for spaceship engine//
 		$('#audiospaceship')[0].pause();
