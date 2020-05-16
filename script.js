@@ -4,16 +4,19 @@ $(document).ready(function() {
 	//ACTIVATE THE SIDE NAV FOR MOBILE MODE//
 	$('.sidenav').sidenav();
 
+	var backgroundAudio = $('#audiolvl');
+
 	//W3schools//
 	var isMobile = window.matchMedia('(max-width: 767px)');
 
+	//disable animation for mobile deviced with max width 767px//
 	if (isMobile.matches) {
 		disableAnimation();
 	} else {
 		//INITIAL BACKGROUND COLOR IS BLACK FOR ANIMATION QUESTIONS
 		// FADE IN BACKGROUND MUSIC//
-		$('#audiolvl')[0].volume = 0;
-		$('#audiolvl').animate({ volume: 0.2 }, 4000);
+		backgroundAudio[0].volume = 0;
+		backgroundAudio.animate({ volume: 0.2 }, 4000);
 		$('body').css('background-color', 'black');
 	}
 
@@ -42,7 +45,7 @@ $(document).ready(function() {
 		//play engine sound of the blue space ship
 		$('#audiospaceship')[0].volume = 0;
 		$('#audiospaceship')[0].play();
-		$('#audiospaceship').animate({ volume: 0.5 }, 4000);
+		$('#audiospaceship').animate({ volume: 0.3 }, 4000);
 
 		//start movifn the blue ship up
 		setTimeout(goUp, 50);
@@ -79,6 +82,7 @@ $(document).ready(function() {
 		//alien voice and delay//
 		let redAlienAudio = $('<Audio></Audio>');
 		redAlienAudio[0].src = 'assets/sounds/alienvoice.mp3';
+		redAlienAudio[0].volume = 0.2;
 		redAlienAudio[0].play();
 
 		//create the redship element
@@ -91,11 +95,12 @@ $(document).ready(function() {
 		//drop the alien to the ground
 		$('#red-alien').animate(
 			{
-				top: $('.container').height() + 50
+				top: $('.container').height() + 150
 			},
 			2000,
 			function() {
 				$('.container').append(redShip);
+				$('#redspaceship')[0].volume = 0.2;
 				$('#redspaceship')[0].play();
 			}
 		);
@@ -173,7 +178,7 @@ $(document).ready(function() {
 
 		//Planets fade in//
 		fadeInPlanets();
-		$('#audiolvl1')[0].remove();
+		backgroundAudio[0].pause();
 	}
 
 	//bluespaceship movement//
