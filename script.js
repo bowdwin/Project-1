@@ -95,7 +95,7 @@ $(document).ready(function() {
 		//drop the alien to the ground
 		$('#red-alien').animate(
 			{
-				top: $('.container').height() + 50
+				top: $('.container').height() + 150
 			},
 			2000,
 			function() {
