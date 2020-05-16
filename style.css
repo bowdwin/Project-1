@@ -176,7 +176,6 @@ h1 {
 }
 #intro {
 	margin-top: 25%;
-	margin-right: 35%;
 	font-family: "death-star";
 }
 /* reduces the materialized canvas that cuts off the screen*/
@@ -313,11 +312,8 @@ body {
 	}
 }
 
-@media only screen and (max-width: 1329px) {
+@media only screen and (min-width: 993px) {
 	#intro {
-		margin-top: 25%;
-		margin-left: 20%;
-		text-align: center;
-		font-family: "death-star";
+		margin-left: 0 !important;
 	}
 }
