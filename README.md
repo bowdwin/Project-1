@@ -6,7 +6,7 @@ Site link https://bowdwin.github.io/Project-1/
 * Mad Scientist with one mission, to 
 provide an entertaining and educational resource
 for people interested in our solar system & space….and to capture aliens!
-* How the game works:
+* How the  intro game works:
     * On page entry you can skip or play a short game to release the captured the alien
     * On entry of animate option, a modal pops up with instructions how to play game and sub links are presented within planets
 * Processor planet includes 4 other feautres
@@ -28,8 +28,16 @@ for people interested in our solar system & space….and to capture aliens!
     * Planet API - https://dry-plains-91502.herokuapp.com/planets
     * Astronomical Calendar - https://in-the-sky.org/newscal.php
 ## GIF shot of "Planet Professor" features
-
-![](images/got.gif)
+* Intro game 
+![](assets/gifs/introgif.gif)
+* Nasa image of day 
+![](assets/gifs/nasadailyimagegif.gif)
+* Solar System
+![](assets/gifs/solarsystemgif.gif)
+* Atronomical Events
+![](assets/gifs/astroevencalgif.gif)
+* Memory Card Planet Match Game
+![](assets/gifs/cardgamegif.gif)
 
 # Font Link
 * Starcraft font https://www.1001freefonts.com/
