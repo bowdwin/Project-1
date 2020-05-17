@@ -1,9 +1,6 @@
 /*planet creation used and edited from: https://www.youtube.com/watch?v=9HXpirUu_H4 */
 /* I have created 2 more planets changed their sizes, positions, changed speed, removed code from original code.*/
-/* @font-face {
-	font-family: "starcraft";
-	src: url(./font/starcraft/starcraft1.ttf); */
-/* } */
+
 body {
 	font-family: "death-star" !important;
 }
@@ -156,8 +153,6 @@ h5 {
 	height: 100px;
 	width: 100px;
 	position: absolute;
-	/* animation: shake 0.5s;
-	animation-iteration-count: infinite; */
 }
 
 #redspaceship {
