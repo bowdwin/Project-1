@@ -241,29 +241,29 @@ $(document).ready(function () {
         mooDiv.append(mooPlanOb, mooType, mooDiameter, mooMass, mooDensity, mooGrav, mooDistance, mooRotation, mooDayLength, mooOb, mooMoons, mooTemp);
         // use .html to set content 
         $("#moonCard").html(mooDiv);
+    
+
+        // *************** empty content from sun id so that new info can be populated***************  
+        $("#sunCard").empty();
+
+        // ***************Create elements for sun card***************
+        var sunGalOb = $("<p>").text("Orbiting Galaxy: " + "Milky Way");
+        var sunType = $("<p>").text("Type: " + "Yellow Dwarf(G2V)");
+        var sunDiameter = $("<p>").text("Diameter: " + "1,392,684" + " km");
+        var sunMass = $("<p>").text("Mass: " + "1.99" + " x10^30 kg");
+        var sunDensity = $("<p>").text("Density: " + "1,410" + " kg/m^3");
+        var sunGrav = $("<p>").text("Gravity: " + "274" + " m/s^2 (1.12 x Earth's)");
+        var sunRotation = $("<p>").text("Rotation Period: " + "192" + " hours");
+        var sunOb = $("<p>").text("Orbital Period: " + "230 million" + " years");
+        var sunPlanets = $("<p>").text("Number of Orbiting Planets: " + "8");
+        var sunTemp = $("<p>").text("Mean Temp: " + "5,500" + " °C");
+
+        // create new sun div to append p tags
+        var sunDiv = $("<div>");
+        sunDiv.append(sunGalOb, sunType, sunDiameter, sunMass, sunDensity, sunGrav, sunRotation, sunOb, sunPlanets, sunTemp);
+        // use .html to set content 
+        $("#sunCard").html(sunDiv);
     });
-
-    // *************** empty content from sun id so that new info can be populated***************  
-    $("#sunCard").empty();
-
-    // ***************Create elements for sun card***************
-    var sunGalOb = $("<p>").text("Orbiting Galaxy: " + "Milky Way");
-    var sunType = $("<p>").text("Type: " + "Yellow Dwarf(G2V)");
-    var sunDiameter = $("<p>").text("Diameter: " + "1,392,684" + " km");
-    var sunMass = $("<p>").text("Mass: " + "1.99" + " x10^30 kg");
-    var sunDensity = $("<p>").text("Density: " + "1,410" + " kg/m^3");
-    var sunGrav = $("<p>").text("Gravity: " + "274" + " m/s^2 (1.12 x Earth's)");
-    var sunRotation = $("<p>").text("Rotation Period: " + "192" + " hours");
-    var sunOb = $("<p>").text("Orbital Period: " + "230 million" + " years");
-    var sunPlanets = $("<p>").text("Number of Orbiting Planets: " + "8");
-    var sunTemp = $("<p>").text("Mean Temp: " + "5,500" + " °C");
-
-    // create new sun div to append p tags
-    var sunDiv = $("<div>");
-    sunDiv.append(sunGalOb, sunType, sunDiameter, sunMass, sunDensity, sunGrav, sunRotation, sunOb, sunPlanets, sunTemp);
-    // use .html to set content 
-    $("#sunCard").html(sunDiv);
-});
 
 function cardFlipSound() {
     var cardFlipSound = new Audio("./assets/sound/swoosh.wav");
@@ -273,4 +273,5 @@ function cardFlipSound() {
 }
 $(".flip-container").hover(function () {
     cardFlipSound();
+});
 });
