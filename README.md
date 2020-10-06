@@ -5,7 +5,7 @@ Site link https://bowdwin.github.io/Project-1/
 * Presenation Link https://tinyurl.com/yckfv4kq
 * Mad Scientist with one mission, to 
 provide an entertaining and educational resource
-for people interested in our solar system & space….and to capture aliens!
+for people interested in space and our solar system!
 * How the  intro game works:
     * On page entry you can skip or play a short game to release the captured the alien
     * On entry of animate option, a modal pops up with instructions how to play game and sub links are presented within planets
